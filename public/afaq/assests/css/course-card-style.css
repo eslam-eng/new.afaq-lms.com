@@ -1,0 +1,686 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+@font-face {
+    font-family: 'Segoe UI Local';
+    src: local('Segoe UI Light');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Local';
+    src: local('Segoe UI Semilight');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Local';
+    src: local('Segoe UI');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Local';
+    src: local('Segoe UI Semibold');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Web (West European)';
+    src: url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-light.woff2') format('woff2'), url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-light.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Web (West European)';
+    src: url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semilight.woff2') format('woff2'), url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semilight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Web (West European)';
+    src: url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-regular.woff2') format('woff2'), url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Web (West European)';
+    src: url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semibold.woff2') format('woff2'), url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* ******************************* */
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    display: block;
+    text-align: unset !important;
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Segoe UI', sans-serif; */
+    font-family: 'Segoe UI Local', 'Segoe UI Web (West European)';
+    background: #f7f7fa !important;
+}
+
+span,
+em,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li {
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Segoe UI', sans-serif; */
+    font-family: 'Segoe UI Local', 'Segoe UI Web (West European)' !important;
+    font-style: normal;
+}
+
+.rtl body,
+.rtl span,
+.rtl em,
+.rtl h1,
+.rtl h2,
+.rtl h3,
+.rtl h4,
+.rtl h5,
+.rtl h6,
+.rtl p,
+.rtl a,
+.rtl li,
+.rtl strong {
+    font-family: 'Tajawal', sans-serif !important;
+}
+
+.col-12,
+.col-10 {
+    padding: 0 !important;
+}
+
+section.the-card-page {
+    background: #fff;
+    padding-top: 220px !important;
+}
+
+section.myProfileContainer {
+    margin: 0;
+    max-width: 100% !important;
+}
+
+.cart-page-lms {
+    background: #f7f7fa !important;
+}
+
+.col-10.offset-1 {
+    margin: 0 auto !important;
+}
+
+.container {
+    width: auto;
+    max-width: 1400px;
+}
+
+a,
+a:hover {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+/* ************** style card ********************** */
+.card-activities {
+    /* width: 30%;
+    height: 466px;
+    position: relative;
+    margin: 0 20px; */
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.card-result {
+    width: 100%;
+}
+
+.card-details {
+    width: 31%;
+    height: fit-content;
+    margin: 0 10px;
+    position: relative;
+    box-shadow: 0px 8px 26px #00000017;
+    height: auto;
+    margin-bottom: 25px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-img {
+    height: 230px;
+    max-height: 230px;
+    /* border: unset !important; */
+}
+.card-img picture img {
+    width: 100%;
+    height: 230px;
+    position: relative;
+}
+.card-img picture {
+    width: 100%;
+    height: 230px;
+}
+.Course-type-data {
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+    padding: 2px 10px;
+    top: 0;
+    width: max-content;
+}
+.Course-type-data.the_Course {
+    background: #CBCBCB;
+}
+
+.Course-type-data.the_Event {
+    background: #DEDD33;
+}
+
+.Course-type-data.the_Workshop {
+    background: #ABEB3E;
+}
+.cours-type-live img {
+    width: 100%;
+    height: 100%;
+}
+
+.cours-type-live {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 127px;
+    height: 95px;
+    padding: 15px;
+}
+.card-data {
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    bottom: 40px;
+    /* box-shadow: 0px 8px 26px #00000017; */
+}
+
+.logo-data_,
+.logo-partner {
+    position: relative;
+}
+
+.partner-img_ picture {
+    position: absolute;
+    bottom: 0;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #CECECE;
+    border-radius: 5px;
+}
+.partner-img_ picture img {
+    width: 82px !important;
+    height: 74px;
+}
+.cost-cours-free {
+    background: #0E4C75;
+    border-radius: 17px;
+    padding: 2px 15px;
+    color: #fff;
+}
+.cost-cours-Different-Price {
+    background: #CBCBCB;
+    padding: 3px 15px;
+    border-radius: 17px;
+    color: #000;
+}
+.cost-cours span {
+    display: block;
+    background: #FF5100;
+    padding: 2px 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500;
+}
+.cost-cours del {
+    color: #CBCBCB;
+}
+
+.cost-cours {
+    display: block;
+    text-align: center;
+}
+.details_activities p {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+.activities_date span,
+.online-coutse span {
+    display: flex;
+    align-items: center;
+    color: #616161;
+    font-size: 12px;
+}
+
+.activities_date span em,
+.online-coutse span em {
+    margin: 0;
+    font-size: 12px;
+    margin: 0 5px;
+}
+span.by-name {
+    background: #abeb3e4a;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.online-coutse {
+    margin: 0 0 15px 0;
+}
+/* ***************************************** */
+.cme-hours {
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    border: solid #016097 4px;
+    border-radius: 19px;
+}
+
+.cme-hours>.cme-top {
+    /* width: 90px; */
+    height: 35px;
+    border-radius: 17px 17px 0 0;
+    background-color: #fff;
+    position: relative;
+}
+
+.cme-hours>.cme-top>img {
+    width: 30%;
+    margin: auto 10px;
+    object-fit: cover;
+    height: auto !important;
+}
+
+.cme-hours>.cme-top>.stroke-double {
+    position: absolute;
+    z-index: 0;
+    color: #016097;
+    font-size: 40px;
+    right: 10px;
+    bottom: 3px;
+    font-weight: 1000;
+}
+
+.cme-hours>.cme-top>.stroke-double:before {
+    content: attr(title);
+    position: absolute;
+    -webkit-text-stroke: 2px white;
+    left: 0;
+    z-index: -1;
+}
+
+.cme-hours>.cme-top>.stroke-double:after {
+    content: attr(title);
+    position: absolute;
+    -webkit-text-stroke: 7px #016097;
+    left: 0;
+    z-index: -2;
+}
+
+.cme-hours>.cme-top>p {
+    font-size: 8px;
+    font-weight: 1000;
+    position: absolute;
+    right: 5px;
+    top: 0px;
+}
+
+.cme-hours>.cme-bottom {
+    height: 20px;
+    background-color: #016097;
+    border-radius: 0 0 15px 15px;
+    color: #fff;
+    font-size: 9px;
+    text-align: center;
+    display: flex;
+}
+
+.cme-hours>.cme-bottom>p {
+    margin: auto;
+    padding: 0 6px;
+    font-size: 16px;
+}
+
+.rtl .cme-hours {
+    left: 15px;
+    right: unset;
+}
+.rtl .cme-hours>.cme-top>img {
+    left: 0;
+    position: absolute;
+}
+
+.rtl span.by-name {
+    right: 0;
+    left: unset;
+}
+.cours-content-btn {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.cours-content-btn button {
+    width: 100%;
+    border: unset;
+    background: #0079CB;
+    height: 40px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.mycourse-page-filtter {
+    display: flex;
+    flex-direction: row;
+}
+
+.mycourse-page-filtter select#sort {
+    box-shadow: none !important;
+    text-shadow: none;
+    border: solid 1px #646464 !important;
+    font-size: 14px;
+    width: 100px !important;
+    border-radius: 10px !important;
+    background: #ffffff 0% 0% no-repeat padding-box !important;
+    padding: 4px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.myprofile-page .Other_courses_lms .card-details {
+    position: relative;
+    margin: 0;
+    padding: 10px;
+}
+
+.myprofile-page .Other_courses_lms .card-details::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    /*content: "\f2ed";*/
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: #fff;
+    z-index: 1;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myprofile-page .Other_courses_lms .card-result {
+    justify-content: space-evenly;
+}
+
+.Other_courses_lms .shared-card.card-activities {
+    width: 100%;
+}
+
+/* select end */
+/* sayed work start */
+
+.nd-cancel-reservation-course {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #A7A7A7;
+    z-index: 99;
+    display: none;
+}
+
+.nd-cancel-reservation-course.active {
+    display: block;
+}
+
+.canel-card {
+    width: 40%;
+    background: #FAFAF9;
+    box-shadow: 0px 5px 16px #5A5A5A;
+    margin: 1rem auto;
+    padding: 20px;
+}
+
+.canc-img-course img {
+    width: 180px;
+    height: 120px;
+    border-radius: 5px;
+}
+
+.close-popup-icon {
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: start;
+    width: 20px;
+}
+
+.cancel-title-card span {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.details-nd-cours-canc strong {
+    color: #000;
+    font-size: 18px;
+    display: block;
+}
+
+.canc-img-course {
+    width: 180px;
+    height: 120px;
+}
+
+.details-nd-cours-canc {
+    width: calc(100% - 150px);
+    margin: 0 10px;
+}
+
+span.date-nd-card {
+    display: block;
+    color: #949493;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.small-card-canc {
+    margin-bottom: 20px;
+}
+
+.card-nd-coust span {
+    display: block;
+    width: max-content;
+    background: #88BD2F;
+    color: #fff;
+    border-radius: 17px;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+}
+
+.card-nd-coust del {
+    /* width: max-content; */
+    text-align: center;
+    display: block;
+    color: #000;
+    font-weight: bold;
+}
+
+.cancel-notes-nd span {
+    color: #88BD2F;
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: block;
+    font-size: 14px;
+}
+
+.cance-resone-nd strong {
+    display: block;
+    margin: 10px 0;
+}
+
+.cance-resone-nd textarea {
+    width: 100%;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.cance-resone-nd button {
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+    background: linear-gradient(45deg, #0E4C75, #0079CB);
+    border: unset;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 30px;
+}
+
+span.c-b-btn {
+    font-size: 16px;
+    text-decoration: underline;
+    color: #016097;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* sayed work end */
+/* ahmad work start */
+.courseContentButton {
+    width: 100%;
+    height: 30px;
+}
+
+.courseContentButton button {
+    margin-top: 10px;
+    border: none;
+    background-color: #0079cb;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+/* ************************************************* media screen ****************************************************** */
+/* ************************************************* media screen ****************************************************** */
+/* ************************************************* media screen ****************************************************** */
+/* ************************************************* media screen ****************************************************** */
+/* ************************************************* media screen ****************************************************** */
+@media screen and (min-width: 851px) and (max-width: 1200px) {
+    .card-details {
+        width: 1000%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .card-details {
+        width: 1000%;
+        margin: 0;
+    }
+
+    .canel-card {
+        width: 93%;
+        padding: 0;
+        padding-bottom: 5px;
+        margin: 75px auto  10px auto;
+        height: 600px;
+        overflow: hidden;
+        overflow-y: visible !important;
+    }
+
+    .small-card-canc {
+        flex-wrap: wrap;
+    }
+
+    .canc-img-course {
+        margin: 0 auto;
+        width: 100%;
+        height: 214px;
+    }
+    .canc-img-course img {
+        width: 100%;
+        height: 214px;
+    }
+    .canc-img-course img {
+        width: 100%;
+        height: 214px;
+    }
+
+    .card-nd-coust,.cancel-notes-nd,div#cancel_reason  {
+        margin: 0 10px;
+    }
+    .cancel-title-card {
+        position: absolute;
+        top: 20px;
+        width: 100%;
+    }
+
+    .close-popup-icon {
+        position: absolute;
+        left: 30px;
+        top: 85px;
+        width: 20px;
+        height: 20px;
+        background: #fff;
+    }
+    .close-popup-icon i {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .cance-resone-nd button {
+        margin: 0 auto;
+        margin-bottom: 10px;
+        padding: 5px 60px;
+    }
+    .cancel-title-card span {
+        color: #fff;
+    }
+    section.idu-programss.container.the-card-page.myProfileContainer {
+        padding-top: 20px !important;
+    }
+
+    .afaq-img-log img {
+        width: 160px;
+        height: 160px;
+        position: relative;
+        right: calc( 50% - 80px);
+    }
+    .mycourse-page-filtter{
+        justify-content: start;
+        width: 100%;
+    }
+}

@@ -1,0 +1,489 @@
+/* .shared-card.card-activities {
+    margin-left: 0;
+    margin-right: 20px;
+} */
+.shared-card.card-activities {
+    /* width: clamp(300px, 32%, 526px); */
+    /* width: 27vw; */
+    margin: 0 10px;
+    margin-bottom: 50px !important;
+    /* margin: 0px 0 50px 0; */
+    /* height: 466px; */
+    position: relative;
+    /* margin: 0 40px; */
+    cursor: pointer;
+}
+.cme-top-.d-flex {
+    width: 110px;
+    height: 90px;
+    margin: 0;
+    padding: 10px;
+}
+.shared-card.card-activities .online-coutse {
+    margin: 10px 0 10px;
+}
+
+.shared-card .card-img {
+    height: 250px;
+    max-height: 250px;
+}
+
+.shared-card .card-img picture {
+    width: 100%;
+    height: 230px;
+}
+
+.shared-card .card-img picture img {
+    width: 100%;
+    height: 230px;
+    position: relative;
+    object-fit: cover;
+}
+
+.shared-card .Course-type-data.the_Course {
+    background: #CBCBCB;
+    /* font-size: 12px; */
+}
+
+.shared-card .Course-type-data.the_Event {
+    background: #DEDD33;
+}
+span.Course-type-data.defult-Event {
+    background: #0e4c75;
+    color: #fff;
+}
+.shared-card .Course-type-data.the_Workshop {
+    background: #ABEB3E;
+}
+
+.shared-card .Course-type-data {
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+    padding: 2px 10px;
+    top: 0;
+    width: max-content;
+}
+
+.shared-card .cours-type-live {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 75px;
+    padding: 10px;
+    /* background: #fff; */
+    border-radius: 0 0 0 6px;
+    /* box-shadow: 0px 2px 2px #0004; */
+}
+
+.shared-card .cours-type-live img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.shared-card .card-data {
+    padding: 15px 15px 0;
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    height: auto;
+    bottom: 30px;
+    box-shadow: 0px 8px 26px #00000017;
+    min-height: 236px;
+    max-height: 236px;
+}
+
+.shared-card .logo-data_ {
+    position: relative;
+    /* bottom: 10px; */
+}
+
+.shared-card .logo-partner {
+    position: relative;
+    /* height: 93px; */
+}
+
+.shared-card .partner-img_ picture {
+    position: absolute;
+    bottom: 5px;
+    background: #fff;
+    padding: 0;
+    border: 1px solid #CECECE;
+    border-radius: 5px;
+}
+
+.shared-card .partner-img_ picture img {
+    width: 70px !important;
+    height: 70px;
+    object-fit: contain;
+    padding: 5px;
+}
+
+.shared-card .cost-cours {
+    display: block;
+    text-align: center;
+}
+
+.shared-card .cost-cours span {
+    display: block;
+    background: #FF5100;
+    padding: 2px 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.shared-card .cost-cours del {
+    color: #CBCBCB;
+}
+
+.shared-card .cost-cours-Different-Price {
+    background: #CBCBCB;
+    padding: 3px 15px;
+    border-radius: 17px;
+    color: #000;
+    font-size: 14px;
+}
+
+.shared-card .cost-cours-free {
+    background: #0E4C75;
+    border-radius: 17px;
+    padding: 2px 15px;
+    color: #fff;
+}
+
+.shared-card .details_activities >p {
+    /* font-size: 22px;
+    line-height: 22px;
+    font-weight: 500;
+    margin: 15px 0; */
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+    margin: 10px 0 5px 0;
+    height: auto;
+    overflow: hidden;
+    color: #000000;
+    min-height: 35px;
+    max-height: 66px;
+}
+
+.shared-card .activities_date span,
+.shared-card .online-coutse span {
+    display: flex;
+    align-items: center;
+    color: #000;
+    opacity: .5;
+    font-weight: 600;
+}
+
+.shared-card .activities_date span em,
+.shared-card .online-coutse span em {
+    margin: 0;
+    font-size: 12px;
+    margin: 0px 5px;
+    font-weight: 500;
+}
+
+.shared-card .online-coutse {
+    margin: 0 0 15px 0;
+    font-size: 12px;
+}
+
+.shared-card span.by-name {
+    background: #ABEB3E57;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 3px;
+}
+
+.shared-card .setails-section-card {
+    /* display: flex; */
+    flex-direction: column;
+    padding: 20px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 0px 16px #08183948;
+    border-radius: 10px;
+    position: absolute;
+    top: -10px;
+    opacity: 0;
+    z-index: 2 !important;
+}
+
+.shared-card .setails-section-card.changed:before {
+    left: auto;
+    right: -17px;
+    transform: rotateY(180deg);
+}
+
+.shared-card .setails-section-card:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -17px;
+    right: auto;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 17px 15px 0;
+    border-color: transparent #fff transparent transparent;
+}
+
+.shared-card .logo-new_ picture img {
+    width: 72px;
+    height: 71px;
+}
+
+.shared-card span.title-details {
+    font-size: 16px;
+    color: #000;
+    line-height: 20px;
+    font-weight: 500;
+    margin: 15px 0;
+    display: block;
+}
+
+.shared-card .all-details_ p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 20px;
+}
+
+.shared-card .about-course-details {
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.shared-card .about-course-details span {
+    display: flex;
+    align-items: center;
+}
+
+.shared-card .about-course-details span em,
+.shared-card .about-course-details span i {
+    color: #616161;
+}
+
+.shared-card .about-course-details span em {
+    margin: 0 5px;
+}
+
+.shared-card .wish-list {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.shared-card em.wishlist-active img {
+    width: 20px;
+    height: 20px;
+}
+
+.shared-card em.wishlist-add {
+    display: none;
+}
+
+.shared-card .wish-list span {
+    font-size: 12px;
+    color: #000000;
+    margin: 0 5px;
+}
+
+.shared-card .about-course-details span em {
+    font-size: 14px;
+}
+
+.shared-card .wish-list i {
+    color: #000;
+}
+
+.shared-card .countt_ span {
+    color: #FF5100;
+    font-weight: bold;
+}
+
+.shared-card .join-btn {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.shared-card .join-btn button {
+    border: unset;
+    background: linear-gradient(45deg, #0E4C75, #0079CB);
+    color: #fff;
+    padding: 8px 32px;
+    border-radius: 20px;
+}
+
+/* ******************** cme-hours style *******************/
+.cme-hours {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    border: solid #016097 4px;
+    border-radius: 19px;
+    width: max-content;
+    min-width: 110px;
+    max-width: 175px;
+}
+
+.cme-hours>.cme-top {
+    width: 100% !important;
+    height: 35px;
+    border-radius: 17px 17px 0 0;
+    background-color: #fff;
+    position: relative;
+    -webkit-border-radius: 17px 17px 0 0;
+    -moz-border-radius: 17px 17px 0 0;
+    -ms-border-radius: 17px 17px 0 0;
+    -o-border-radius: 17px 17px 0 0;
+}
+
+.cme-hours>.cme-top>img {
+    object-fit: contain;
+    align-self: flex-end;
+    margin: 5px;
+    width: 30px;
+    /* margin: auto 10px; */
+    object-fit: cover;
+    height: auto !important;
+    /* position: relative; */
+}
+
+.cme-hours>.cme-top>.stroke-double {
+    position: absolute;
+    z-index: 0;
+    color: #016097;
+    font-size: 40px;
+    right: 10px;
+    bottom: 3px;
+    font-weight: 1000;
+}
+
+.cme-hours>.cme-top>.stroke-double {
+    font-size: 2rem;
+    width: auto;
+    bottom: -13px;
+    right: 8px;
+}
+
+.cme-hours>.cme-top>.stroke-double:before {
+    content: attr(title);
+    position: absolute;
+    -webkit-text-stroke: 2px white;
+    left: 0;
+    z-index: -1;
+}
+
+.cme-hours>.cme-top>.stroke-double:after {
+    content: attr(title);
+    position: absolute;
+    -webkit-text-stroke: 7px #016097;
+    left: 0;
+    z-index: -2;
+}
+
+.cme-hours>.cme-top>p {
+    font-size: 10px;
+    font-weight: 1000;
+    position: absolute;
+    right: 5px;
+    top: -5px;
+    /* top: 20px; */
+    /* height: 60px !important; */
+    color: #016097;
+}
+
+.cme-hours>.cme-bottom {
+    height: 32px;
+    background-color: #016097;
+    border-radius: 0 0 15px 15px;
+    color: #fff;
+    font-size: 9px;
+    text-align: center;
+    display: flex;
+}
+
+.cme-hours>.cme-bottom>p {
+    margin: auto;
+    padding: 0 6px;
+    font-size: 12px;
+    color: #fff;
+    height: 25px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.header-cart-section {
+    height: auto;
+    padding-top: 20px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+.Recorded-carusel.exsption-stutes .owl-carousel .owl-stage-outer .setails-section-card.on-right {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+.shared-card .card-img{
+    position: relative;
+}
+/* .header-cart-section .shared-card.card-activities{ */
+/* width: 100%; */
+/* margin: 0; */
+/* } */
+.cart-popup-setion {
+    height: auto;
+}
+
+/* ********************* rtl style ***********************/
+.rtl span.by-name {
+    right: 0;
+    left: unset;
+}
+
+/* ********************** media screen *********************/
+/* @media screen and (min-width: 851px) and (max-width: 1200px) { */
+/* .shared-card.card-activities { */
+/* width: 100%; */
+/* margin: 0; */
+/* } */
+/* } */
+/* ************ */
+/* @media screen and (max-width: 800px) { */
+/* .shared-card.card-activities { */
+/* width: 100%; */
+/* margin: 0; */
+/* } */
+/* } */
+
+
+/* .Recorded_slider .shared-card.card-activities{
+    width: 100%;
+} */
+@media screen and (max-width: 800px) {
+    .shared-card.card-activities {
+        width: 100% !important;
+        margin-bottom: 20px !important;
+    }
+    .setails-section-card.on-right {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .shared-card.card-activities,.card-details{
+        margin: 20px 0;
+    }
+    .shared-card .activities_date span em,
+.shared-card .online-coutse span em {
+    font-size: 16px;
+}
+}

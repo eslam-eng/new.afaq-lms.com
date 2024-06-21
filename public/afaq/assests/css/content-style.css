@@ -1,0 +1,793 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+
+
+@font-face {
+  font-family: 'Segoe UI Local';
+  src: local('Segoe UI Light');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI Local';
+  src: local('Segoe UI Semilight');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI Local';
+  src: local('Segoe UI');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI Local';
+  src: local('Segoe UI Semibold');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI Web (West European)';
+  src: url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-light.woff2') format('woff2'), url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-light.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI Web (West European)';
+  src: url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semilight.woff2') format('woff2'), url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semilight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI Web (West European)';
+  src: url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-regular.woff2') format('woff2'), url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI Web (West European)';
+  src: url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semibold.woff2') format('woff2'), url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* ******************************* */
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  display: block;
+  text-align: unset !important;
+  /* font-family: 'Montserrat', sans-serif; */
+  /* font-family: 'Segoe UI', sans-serif; */
+  font-family: 'Segoe UI Local', 'Segoe UI Web (West European)';
+  background: #f7f7fa;
+}
+
+span,
+em,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li {
+  /* font-family: 'Montserrat', sans-serif; */
+  /* font-family: 'Segoe UI', sans-serif; */
+  font-family: 'Segoe UI Local', 'Segoe UI Web (West European)';
+  font-style: normal;
+}
+.rtl body ,
+.rtl span,
+.rtl em,
+.rtl h1,
+.rtl h2,
+.rtl h3,
+.rtl h4,
+.rtl h5,
+.rtl h6,
+.rtl p,
+.rtl a,
+.rtl li,
+.rtl strong
+{
+    font-family: 'Tajawal', sans-serif !important;
+}
+.container {
+  width: auto;
+  max-width: 1400px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ***************************** */
+.Introduction-What-learn {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.icons {
+  position: relative;
+}
+
+span.big-icon {
+  color: #DEDD33;
+  font-size: 16px;
+}
+
+span.small-icon {
+  color: #88BD2F;
+  font-size: 12px;
+  position: absolute;
+  top: 4px;
+  left: -3px;
+}
+
+.Introduction-What-learn strong {
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+.the-course-time span {
+  font-weight: 600;
+  /* padding: 0 40px; */
+  color: #88BD2F;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-page-details {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.nots-side {
+  position: relative;
+  width: 25%;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0px 8px 26px #d4d4d49e;
+  border-radius: 6px;
+}
+
+.page-details-section {
+  position: relative;
+  width: calc(100% - 26%);
+  padding: 10px;
+  /* background: #fff;
+  box-shadow: 0px 8px 26px #d4d4d49e;
+  border-radius: 6px; */
+}
+
+.content-note-data {
+  position: relative;
+  margin: 15px 0;
+  border-bottom: 1px solid #CBCBCB;
+  padding: 20px 0;
+}
+
+.content-note-data:last-child {
+  border-bottom: unset;
+  padding-bottom: 0;
+}
+
+.note-img {
+  position: relative;
+  width: 155px;
+  height: 81px;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.note-img img {
+  width: 155px;
+  height: 81px;
+}
+
+.note-img:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #58585880;
+}
+
+.note-img span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  color: #fff;
+  margin: 0 8px;
+}
+
+.content-note-data p {
+  font-size: 14px;
+  margin: 10px 0;
+  font-weight: 500;
+  color: #000;
+  max-height: 150px;
+  overflow: hidden;
+}
+
+.note-options span {
+  color: #909090;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.small-playe-img img {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin: 0 auto;
+  z-index: 9;
+  top: calc(50% - 7px);
+  left: calc(50% - 7px);
+}
+
+/* *** stepp style **************/
+.stepper-wrapper {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.stepper-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+
+
+}
+
+.stepper-item::before {
+  position: absolute;
+  content: "";
+  border-bottom: 10px solid #ccc;
+  width: 100%;
+  top: 20px;
+  left: -50%;
+  z-index: 2;
+}
+
+.stepper-item::after {
+  position: absolute;
+  content: "";
+  border-bottom: 10px solid #ccc;
+  width: 100%;
+  top: 20px;
+  left: 100%;
+  z-index: 2;
+}
+
+.stepper-item .step-counter {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ccc;
+  margin-bottom: 6px;
+  display: none;
+}
+
+.step-name {
+  display: none;
+}
+
+.stepper-item.active {
+  font-weight: bold;
+}
+
+.stepper-item.completed .step-counter {
+  background-color: #4bb543;
+}
+
+.stepper-item.completed::after {
+  position: absolute;
+  content: "";
+  border-bottom: 10px solid #88BD2F;
+  width: 100%;
+  top: 20px;
+  left: 0;
+  z-index: 3;
+}
+
+.stepper-item:first-child::before {
+  content: none;
+}
+
+.stepper-item:last-child::after {
+  content: none;
+}
+
+.complet-steps span {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.complet-steps span em {
+  color: #88BD2F;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+.complet-steps span strong {
+  font-weight: bold;
+  font-size: 20px;
+  color: #000;
+}
+
+/* ************************************* end steps **********************/
+.page-details-data-lms {
+  background: #fff;
+  box-shadow: 0px 8px 26px #d4d4d49e;
+  border-radius: 6px;
+  /* margin-top: 100px; */
+  display: flex;
+}
+
+.video-cours {
+  width: 570px;
+  /* height: 300px; */
+
+}
+
+.video-cours video {
+  width: 570px;
+  height: 300px;
+  position: relative;
+  bottom: 25px;
+}
+
+.video-js{
+    bottom: 25px;
+    height: 400px;
+}
+.btn-control {
+  margin-bottom: 10px;
+}
+
+.btn-control button {
+  background: unset;
+  border: unset;
+  padding: 2px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button.Previous {
+  border: 1px solid #88BD2F;
+}
+
+button.Next {
+  background: #88BD2F;
+  color: #fff;
+}
+
+.cours-details-lms>p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.lms-active-cours {
+  width: 600px;
+}
+
+.lms-course-list {
+  width: calc(100% - 600px);
+  padding: 10px;
+  height: auto;
+  overflow: hidden;
+  max-height: 1000px;
+  overflow-y: auto;
+}
+
+p.small-text {
+  color: #A5A5A5;
+  font-size: 14px;
+  height: 20px;
+  overflow: hidden;
+  font-weight: 400;
+}
+
+.all-p-lms p {
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+}
+
+.cours-number {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cours-number>span {
+  font-weight: bold;
+  color: #000;
+  font-size: 18px;
+}
+
+.expand-list>span {
+  color: #88BD2F;
+  font-size: 14px;
+  cursor: pointer;
+  display: none;
+}
+
+.expand-list>span.active {
+  display: block;
+}
+
+.cours-list-d span {
+  display: block;
+  font-size: 14px;
+  padding: 2px 0;
+  font-weight: 300;
+}
+
+.cours-list-d {
+  margin: 5px 0;
+}
+
+.cours-section-lms {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.cours-stutes .complte_ {
+  color: #0079CB;
+}
+
+.cours-stutes .not-compte {
+  color: #CBCBCB;
+}
+
+.cours-stutes .closed_ {
+  color: #FD5000;
+}
+
+.cours-stutes i {
+  font-size: 22px;
+  display: none;
+}
+
+.cours-stutes i.active {
+  display: block;
+}
+
+.cours-img-lms {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  margin: 0 5px;
+  overflow: hidden;
+  max-width: 77px;
+  min-width: 77px;
+  border-radius: 6px;
+}
+
+.cours-img-lms img {
+  width: 50px;
+  height: 50px;
+}
+
+.cours-details-data_lms>p {
+  color: #909090;
+  font-size: 14px;
+  margin: 0 5px;
+}
+
+span.about-cours-stutes {
+  position: absolute;
+  top: 24%;
+  left: calc(50% - 35%);
+  font-size: 13px;
+  color: #fff;
+  z-index: 2;
+  text-align: center;
+  width: 70%;
+}
+
+.cours-img-lms:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #39393980;
+  z-index: 1;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.cours-section-lms.active-section_ .cours-stutes,
+.cours-section-lms.active-section_ .about-cours-stutes {
+  opacity: 0;
+}
+
+.cours-section-lms.active-section_ .cours-img-lms img {
+  border: 3px solid #88BD2F;
+  padding: 3px;
+}
+
+.cours-section-lms.active-section_ .cours-img-lms:before {
+  display: none;
+}
+
+.cours-section-lms.active-section_ .cours-details-data_lms p {
+  color: #000;
+  font-weight: bold;
+}
+
+span.about-cours-stutes.not-start {
+  display: none;
+}
+
+.section-work {
+  height: auto;
+  overflow: hidden;
+  transition: .3s ease-in-out;
+  position: relative;
+}
+
+.section-work.active {
+  height: 0;
+  transition: .3s ease-in-out;
+}
+.on-small-screen {
+  display: none;
+}
+/* ************************************ */
+.nd-cancel-reservation-course {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #A7A7A7;
+    z-index: 9;
+    display: none;
+}
+.nd-cancel-reservation-course.active {
+    display: block;
+}
+.canel-card {
+    width: 40%;
+    background: #FAFAF9;
+    box-shadow: 0px 5px 16px #5A5A5A;
+    margin: 3rem auto;
+    padding: 20px;
+}
+.canc-img-course img {
+    width: 180px;
+    height: 120px;
+    border-radius: 5px;
+}
+.close-popup-icon {
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: start;
+    width: 20px;
+}
+.cancel-title-card span {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.details-nd-cours-canc strong {
+    color: #000;
+    font-size: 18px;
+    display: block;
+}
+.canc-img-course {
+    width: 180px;
+    height: 120px;
+}
+.details-nd-cours-canc {
+    width: calc(100% - 150px);
+    margin: 0 10px;
+}
+span.date-nd-card {
+    display: block;
+    color: #949493;
+    font-size: 14px;
+    margin: 5px 0;
+}
+.small-card-canc {
+    margin-bottom: 20px;
+}
+.card-nd-coust span {
+    display: block;
+    width: max-content;
+    background: #88BD2F;
+    color: #fff;
+    border-radius: 17px;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+}
+.card-nd-coust del {
+    /* width: max-content; */
+    text-align: center;
+    display: block;
+    color: #000;
+    font-weight: bold;
+}
+.cancel-notes-nd span {
+    color: #88BD2F;
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: block;
+    font-size: 14px;
+}
+.cance-resone-nd strong {
+    display: block;
+    margin: 10px 0;
+}
+.cance-resone-nd textarea {
+    width: 100%;
+    border-radius: 10px;
+    background: #fff;
+}
+.cance-resone-nd button {
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+    background: linear-gradient(45deg, #0E4C75, #0079CB);
+    border: unset;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 30px;
+}
+span.c-b-btn {
+    font-size: 16px;
+    text-decoration: underline;
+    color: #016097;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* *************** media screen *************************** */
+@media screen and (max-width: 800px) {
+  .col-10.offset-1 {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .on-small-screen {
+    display: block;
+}
+  .contact-page-details {
+    flex-wrap: wrap;
+  }
+
+  .nots-side {
+    order: 2;
+    display: block;
+    width: 100%;
+    /* background: unset;
+    box-shadow: unset; */
+  }
+
+  .page-details-section {
+    width: 100%;
+    padding: unset;
+  }
+
+  .video-cours {
+    width: 100% !important;
+  }
+
+  .video-cours iframe {
+    width: 100%;
+  }
+
+  .page-details-data-lms {
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    flex-direction: column-reverse;
+    /* box-shadow: unset;
+    background: unset; */
+  }
+
+  .lms-course-list {
+    max-width: 100%;
+    width:100%;
+
+  }
+  .lms-course-list .accordion{
+    display: flex !important;
+    /* flex-direction: row; */
+    overflow-x: scroll;
+    max-width: 100%;
+    width: 100%;
+  }
+  .lms-active-cours{
+    width: 100%;
+  }
+}
+
+.list-group-item+.list-group-item.active{
+    background-color: transparent !important;
+}
+
+
+.lecture_progress_bar .lecture_progress_ratio {
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.lecture_progress_bar .progress_white_line {
+    width: 100%;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 3px;
+    position: relative;
+    margin-top: 15px;
+    box-shadow: 0 0 10px #e7e7e7;
+}
+
+.lecture_progress_bar .progress_white_line .blue-line {
+    position: absolute;
+    /* width: 20%; */
+    height: 10px;
+    background-color: #88BD2F;
+    border-radius: 3px;
+}
+
+.accordion-item,.list-group-item{
+    border: none !important;
+}
+
+.accordion-button::after{
+    background-image: url("../../../nazil/imgs/purpleArrow.png");
+    height: 1.7rem !important;
+}
+
+.accordion-button:not(.collapsed)::after{
+    background-image: url("../../../nazil/imgs/purpleArrow.png");
+    height: 1.7rem !important;
+}
+.accordion-button:not(.collapsed){
+    box-shadow: none !important;
+    background-color: transparent;
+    color: #000;
+}
+.accordion-button:focus{
+    box-shadow: none !important;
+}

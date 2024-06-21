@@ -1,0 +1,207 @@
+.own-package-text {
+    text-align: center;
+    padding: 10px 0 15px 0;
+    box-shadow: 0px 8px 26px #0000000D;
+}
+
+.own-package-text strong {
+    display: block;
+    font-size: 16px;
+    padding: 10px 0;
+    font-weight: 500;
+}
+
+.own-package-text span a {
+    background: #DEDD33;
+    padding: 5px 15px;
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    border-radius: 7px;
+    font-size: 14px;
+    color: #000 !important;
+}
+
+table.table-pwn-package {
+    width: 100%;
+}
+
+tr.table-row th .all-packages.inner-packge {
+    border-radius: 14px;
+}
+
+.table-row th button,
+.all-cards-pk button {
+    /* background: black; */
+    display: block;
+    width: max-content;
+    margin: 10px auto;
+    color: #fff;
+    border-radius: 7px;
+    border: unset;
+    padding: 2px 10px;
+}
+
+tr.table-on-col {
+    border-bottom: 1px solid #b4b4b4de;
+    width: 100%;
+    position: relative;
+}
+
+tr.table-on-col td {
+    padding: 15px 10px;
+}
+
+span.icon-table {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+}
+
+span.close-icon i {
+    color: #c6c3c3;
+}
+
+span.right-icon i {
+    color: #c6edda;
+}
+
+span.text-table {
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    color: #212224;
+}
+
+tr.table-on-col td:first-child {
+    border-right: 1px solid #b4b4b4de;
+}
+.rtl tr.table-on-col td:first-child {
+    border-right: unset;
+    border-left: 1px solid #b4b4b4de;
+}
+.table-row .the-work-time {
+    margin: 10px 0;
+}
+
+.own-package-text {
+    position: sticky;
+    height: 100px;
+    top: 70px;
+    background: #fff;
+    z-index: 1;
+}
+
+tr.table-row {
+    height: 190px;
+    background: #fff;
+    position: sticky;
+    top: 160px;
+    z-index: 1;
+}
+
+
+table.table-pwn-package tr.table-row th:nth-child(3) a button {
+    background: #409fe0;
+}
+table.table-pwn-package tr.table-row th:nth-child(4) a button {
+    background: #e05678;
+}
+table.table-pwn-package tr.table-row th:nth-child(5) a button {
+    background: #fcc42c;
+}
+/* *********************** media screen *********************************/
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 800px) {
+    .customise-sec {
+        padding: 15px 0 15px 0;
+        box-shadow: 0px 8px 26px #0000000D;
+    }
+    .customise-sec .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .customise-sec strong {
+        font-size: 13px;
+        color: #000000;
+        text-align: center;
+        display: block;
+    }
+    .customise-sec span a {
+        background: linear-gradient(100deg, #1DC894, #64D3B1);
+        padding: 5px 15px;
+        display: block;
+        width: max-content;
+        margin: 0 auto;
+        border-radius: 7px;
+        font-size: 14px;
+        color: #fff !important;
+    }
+    .all-packages-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .all-cards-pk {
+        width: 33%;
+    }
+    .all-cards-pk .package-details-title {
+        padding: 10px;
+    }
+    .all-cards-pk .package-details-title>span {
+        width: max-content;
+        font-size: 12px;
+        padding: 5px 5px;
+    }
+    .all-cards-pk .all-packages.inner-packge {
+        margin: 0 5px;
+        border-radius: 14px;
+    }
+    .fixed-package {
+        position: sticky;
+        height: 280px;
+        top: 153px;
+        background: #fff;
+        /* padding-top: 10px; */
+    }
+    .pack-name {
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        color: #212224;
+        font-weight: 500;
+        padding: 10px 0;
+    }
+    .pck-active {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+    }
+    .activ-mark {
+        width: 30%;
+        text-align: center;
+    }
+    .activ-mark:nth-child(2) {
+        border-right: 1px solid #b0b0b0;
+        border-left: 1px solid #b0b0b0;
+    }
+    .customise-sec.fixed-sec {
+        position: fixed;
+        z-index: 1;
+        background: #fff;
+        top: 70px;
+        width: 100%;
+    }
+    .customise-sec.fixed-sec .try-buy {
+        margin: 5px 0 2px 0;
+    }
+    .package-table-sec.pxa {
+        padding: 100px 0 30px 0;
+    }
+    .own-package-text {
+        top: 60px;
+    }
+}

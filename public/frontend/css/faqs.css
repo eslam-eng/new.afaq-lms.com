@@ -1,0 +1,130 @@
+.rtl .faq_page{
+    flex-direction: row-reverse;
+}
+
+.ltr .left_white_space{
+    width: 70px;
+}
+
+.ltr .faq_section{
+    width: calc(100% - 80px);
+}
+
+.innerheader-nd{
+    height: 100%;
+}
+
+.left_white_space{
+    content: '';
+    width: 80px;
+    background-color: #fff;
+}
+
+.faq_section{
+    min-height: 200px;
+    margin-bottom: 200px;
+    width: calc(100% - 90px);
+    padding: 50px;
+}
+
+.faq_section > div{
+    width: 95%;
+}
+
+.faq_section h3{
+    font-weight: bold;
+    position: relative;
+    margin: 0 20px 30px;
+}
+
+.faq_section h3::before{
+    position: absolute;
+    height: 6px;
+    width: 25px;
+    background-color: #845097;
+    bottom: 0;
+    content: '';
+    z-index: -1;
+    border-radius: 50px;
+}
+
+.tab_links{
+    margin: 0 20px;
+    flex-wrap: wrap;
+}
+
+.tab_links h5{
+    margin: 0 20px;
+    position: relative;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tab_links h5.active::before{
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    background-color: #00B1DA;
+    bottom: 0;
+    content: '';
+    z-index: -1;
+    border-radius: 50px;
+}
+
+.faq_body{
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.faq_body .faq_answer{
+    /* margin-top: 30px; */
+    display: none;
+    border-top: solid 1px #ddd;
+}
+
+.show_answer{
+    display: block !important;
+    /* margin: 0; */
+    padding: 20px;
+}
+
+.faq_question {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.faq_question h6{
+    font-weight: bold;
+    margin: 0;
+}
+
+.faq_question i{
+    background-color: #ddd;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.upside_arrow{
+    transform: rotateX(180deg);
+    color: #fff;
+    background-color: #00B1DA !important;
+}
+
+@media only screen and (max-width: 830px){
+    .left_white_space{
+        display: none;
+    }
+    .faq_section{
+        width: 100% !important;
+        margin: 0;
+        padding: 20px 0;
+    }
+    .tab_links h5{
+        font-size: 13px;
+        margin: 0 5px;
+    }
+    .tab_links h5.active::before{
+        bottom: -5px;
+    }
+}

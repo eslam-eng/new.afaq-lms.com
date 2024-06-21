@@ -1,0 +1,205 @@
+.card-image{
+    padding: 0 !important;
+}
+
+.card-body{
+    background-image: linear-gradient(130deg, #3a5708 0%, #88BD2F 100%);
+    color: #fff;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 2px 0 3px #aeaeae;
+}
+
+.card-body .card_header{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.card-body .certificate_name label{
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.card-body .add_image_button{
+    height: 50px;
+    width: 100px;
+    margin: 0 0 20px 0;
+}
+
+.card-body label .fa{
+    left: 20px;
+    color: #00B1DA;
+}
+
+.card-body label span{
+    margin-top: 12px;
+    text-align: right;
+}
+
+.card-body label.image_text{
+    padding: 0 10px 0 0;
+}
+
+#add_items_section select.orange_info option{
+    margin: 10px 10px 0 10px !important;
+    color: #00b1da !important;
+    background-color: #fff !important;
+}
+
+.card-body .save_button{
+    background-color: #00B1DA;
+    color: #fff;
+}
+
+.canvas-container{
+    margin: auto;
+    /* padding: 100px; */
+}
+
+#certificate_image_buttons, #add_items_section{
+    background-color: #ddd;
+    border-radius: 0 10px 0 0;
+    /* box-shadow: 0px -2px 2px #c6c6c6ab; */
+    padding: 10px;
+}
+
+#certificate_image_buttons > .tools_section{
+    font-size: 10px;
+    width: fit-content;
+    align-items: center;
+}
+
+#certificate_image_buttons > .tools_section.range_sction > div > input{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#certificate_image_buttons > .tools_section.range_sction > div > input::-webkit-inner-spin-button,
+#certificate_image_buttons > .tools_section.range_sction > div > input::-webkit-outer-spin-button {
+  -webkit-appearance: auto !important;
+}
+
+#certificate_image_buttons > .tools_section > div{
+    margin: 0 10px;
+    text-align: center;
+}
+
+#certificate_image_buttons > .tools_section.colors input, #text-cmd-bold{
+    border: none;
+    color: #000;
+    background-color: #fff;
+    border-radius: 3px;
+    margin: 5px;
+    width: 26px;
+    height: 26px;
+    font-weight: bold;
+    position: relative;
+    padding: 0px 1px;
+}
+
+/* #certificate_image_buttons > .tools_section.colors input{
+    padding: 10px;
+} */
+
+#certificate_image_buttons > .tools_section > button:last-of-type, #add_items_section button{
+    border: none;
+    border-radius: 3px;
+    margin: 5px;
+    background-image: linear-gradient(130deg, #081839 0%, #88BD2F 100%);
+    color: #fff;
+    font-size: 15px;
+}
+
+/* #certificate_image_buttons > .tools_section.colors input::before, #certificate_image_buttons > .tools_section.colors input::after{
+    content: '';
+    background-color: #88BD2F;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    right: 0;
+    top: 0;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    clip-path: polygon(15% 15%, 85% 15%, 85% 45%, 65% 45%, 65% 85%, 35% 85%, 35% 45%, 15% 45%);
+} */
+
+/* #certificate_image_buttons > .tools_section.colors > div:last-of-type input::after, #certificate_image_buttons > .tools_section.colors > div:nth-of-type(3) input::after {
+    background-color: unset;
+    clip-path: polygon(20% 20%, 80% 20%, 80% 40%, 60% 40%, 60% 80%, 40% 80%, 40% 40%, 20% 40%);
+    background-color: #ffffff;
+}
+
+#certificate_image_buttons > .tools_section.colors > div:nth-of-type(3) input{
+    background-color: #88BD2F;
+}
+
+#certificate_image_buttons > .tools_section.colors > div:nth-of-type(1) input::before{
+    background-color: #fff;
+}
+
+#certificate_image_buttons > .tools_section.colors > div:nth-of-type(1) input::after{
+    clip-path: polygon(20% 20%, 80% 20%, 80% 40%, 60% 40%, 60% 80%, 40% 80%, 40% 40%, 20% 40%);
+}
+
+#certificate_image_buttons > .tools_section.colors > div:last-of-type input::before{
+    background-color: #fff;
+}
+
+#certificate_image_buttons > .tools_section.colors > div:last-of-type input::after{
+    background-image: url('../../nazil/imgs/image_black_icon.png');
+    background-repeat: no-repeat;
+    background-size: 16px auto;
+    background-position: center;
+    clip-path: unset;
+} */
+
+#certificate_image_buttons > .tools_section select, #add_items_section select.orange_info{
+    margin: 5px;
+    border: solid 1px #88BD2F;
+    color: #88BD2F;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    font-family: 'FontAwesome', 'Second Font name';
+    height: 26px;
+}
+
+#certificate_image_buttons > .tools_section select{
+    color: #88BD2F;
+    font-size: 15px;
+    text-align: center;
+}
+
+#certificate_image_buttons > .tools_section select .dropdown_items{
+    position: absolute;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 9;
+    border: solid 1px;
+}
+
+
+/***/
+#add_items_section{
+    display: none;
+    margin-bottom: 25px;
+}
+
+#add_items_section > .tools_section button.add_text{
+    background-image: unset;
+    background-color: #fff;
+    color: #000;
+}
+
+#add_items_section > .form-group{
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,320 @@
+.Ready-To-Start strong {
+    text-align: center;
+    display: block;
+    font-size: 22px;
+    color: #141414;
+    font-weight: 600;
+}
+
+.Ready-To-Start {
+    padding-bottom: 20px;
+}
+
+.Ready-To-Start strong a {
+    color: #0079CB !important;
+    margin: 0 5px;
+}
+
+.the-work-time {
+    background: #F2F6FA;
+    padding: 10px 15px;
+    width: max-content;
+    margin: 10px auto;
+    border-radius: 50px;
+    font-size: 15px;
+    color: #3B3B3B;
+}
+
+.the-work-time span {
+    padding: 5px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.the-work-time span.active {
+    background: #FFFFFF;
+}
+
+.all-packages.inner-packge {
+    padding: 0;
+    border-radius: 14px 14px 0px 0px;
+    overflow: hidden;
+}
+
+.one-sec-inner-package.all-packages.inner-packge .package-details-title,
+.one-sec-inner-package-btn {
+    background: linear-gradient(122deg, #0079CB, #51A9E5);
+}
+
+.package-details-title {
+    padding: 15px;
+    text-align: center;
+    width: 180px;
+    height: 140px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.pal-inner {
+    padding: 10px 15px;
+}
+
+.package-details-title>span {
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 7px;
+    font-size: 16px;
+    /* width: 120px; */
+    width: max-content;
+    display: block;
+    margin: 0 auto;
+    text-transform: capitalize;
+}
+
+.inner-packge .packages-count {
+    padding: 15px 0 0 0;
+}
+
+.inner-packge .packages-count em {
+    color: #fff;
+    font-weight: bold;
+}
+
+.two-sec-inner-package.all-packages.inner-packge .package-details-title,
+.two-sec-inner-package-btn {
+    background: linear-gradient(115deg, #E23E66, #DE6F8B);
+}
+
+.one-sec-inner-package.inner-packge .package-details-title>span {
+    color: #0079CB;
+}
+
+.two-sec-inner-package.all-packages.inner-packge .package-details-title>span {
+    color: #F1416C;
+}
+
+.thr-sec-inner-package.all-packages.inner-packge .package-details-title,
+.thr-sec-inner-package-btn {
+    background: linear-gradient(122deg, #FFBA00, #F8D67B);
+}
+
+.thr-sec-inner-package.all-packages.inner-packge .package-details-title>span {
+    color: #FF9D00;
+}
+
+.for-sec-inner-package.all-packages.inner-packge .package-details-title,
+.for-sec-inner-package-btn {
+    background: linear-gradient(122deg, #1DC894, #50E0B4);
+}
+
+.for-sec-inner-package.all-packages.inner-packge .package-details-title>span {
+    color: #1DC894;
+}
+
+.Advantages span {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    color: #323538;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/* .inner-packge .packages-details {
+    justify-content: start;
+} */
+
+.inner-packge .packages-details span.package-type {
+    margin: 0 10px;
+    font-size: 12px;
+    color: #2A2C2E;
+    font-weight: 400;
+}
+
+.he-packages {
+    overflow-y: visible !important;
+    height: 550px;
+    overflow: hidden;
+    min-height: 550px;
+    max-height: 550px;
+}
+
+.he-packages::-webkit-scrollbar {
+    width: 5px!important;
+    background-color: #f5f5f5!important;
+}
+
+button.Choose-plan {
+    margin: 20px auto 20px auto;
+    font-size: 16px;
+    color: #fff;
+    border: unset;
+    padding: 5px 20px;
+    font-weight: 500;
+    border-radius: 7px;
+    text-align: center;
+    display: block;
+}
+
+.one-sec-inner-package button.Choose-plan {
+    background: #0079CB;
+}
+
+.two-sec-inner-package button.Choose-plan {
+    background: #E23E66;
+}
+
+.thr-sec-inner-package button.Choose-plan {
+    background: #FFBA00;
+}
+
+.for-sec-inner-package button.Choose-plan {
+    background: #1DC894;
+}
+
+.some-details-appropriate-package {
+    padding: 20px 0;
+}
+
+.try-buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button.try-now {
+    background: linear-gradient(180deg, #1DC894, #64D3B1);
+    border: unset;
+    font-size: 14px;
+    color: #FFFFFF;
+    padding: 3px 20px;
+    border-radius: 7px;
+}
+
+button.buy-now {
+    border: 1px solid #40CEA2;
+    border-radius: 7px;
+    background: unset;
+    color: #000;
+    font-size: 14px;
+    padding: 3px 20px;
+}
+
+.package-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.packg-amount {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.del- {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    height: 25px;
+    justify-content: center;
+}
+
+.del- del {
+    color: #fff;
+    margin: 0 7px;
+}
+
+.col-package-page {
+    width: 25%;
+}
+
+.on-mob {
+    display: none;
+}
+
+.work-time {
+    position: sticky;
+    height: 100px;
+    top: 160px;
+    background: #fff;
+    z-index: 1;
+}
+
+.inner-pxa {
+    padding-bottom: 10px;
+}
+
+.appropriate-package-slider .owl-stage-outer {
+    direction: initial;
+}
+
+
+/* *********************** media screen *********************************/
+
+@media screen and (max-width: 1200px) {
+    .col-package-page {
+        width: 48%;
+        margin: 10px auto;
+    }
+    .on-mob {
+        display: none;
+    }
+    .some-details-appropriate-package label {
+        display: flex;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .col-package-page {
+        width: 95%;
+    }
+    .on-web {
+        display: none;
+    }
+    .on-mob {
+        display: block;
+    }
+    .some-details-appropriate-package label {
+        display: flex;
+        font-size: 12px;
+    }
+    .del- {
+        width: 100%;
+    }
+    .packg-amount {
+        width: 100%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+    .Ready-To-Start strong {
+        font-size: 18px;
+    }
+    .work-time {
+        height: 60px;
+        top: 130px;
+    }
+    .the-work-time {
+        position: relative;
+        top: 7px;
+    }
+    .work-time.busn-details {
+        top: 150px;
+    }
+    .package-details-title {
+        width: 100%;
+    }
+    .pal-inner {
+        display: none;
+    }
+    .pal-inner.active {
+        display: block;
+    }
+}

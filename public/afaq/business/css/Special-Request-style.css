@@ -1,0 +1,207 @@
+.on-mob,
+.print-invoice-mob {
+    display: none;
+}
+
+section.main-creat-event {
+    padding: 20px 0;
+}
+
+section.main-creat-event strong {
+    text-align: center;
+    display: block;
+    padding: 30px 0 20px 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+section.main-creat-event strong em {
+    color: #0079CB;
+}
+
+section.main-creat-event p {
+    font-size: 16px;
+    width: 75%;
+    font-weight: 400;
+    color: #383838;
+    margin: 10px auto 20px auto;
+    text-align: center;
+}
+
+span.event-title {
+    color: #0079CB;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 30px 0 20px 0;
+    display: block;
+}
+
+.evnt-info-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.evnt-details-info {
+    display: block;
+    width: 32%;
+    position: relative;
+    margin: 10px 0;
+}
+
+.evnt-details-info label {
+    display: block;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.evnt-details-info label em {
+    color: #909090;
+    font-size: 12px;
+}
+
+.evnt-details-info input,
+.evnt-details-info select,
+.evnt-details-info textarea {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #CBCBCB;
+    padding: 10px 20px;
+    appearance: none;
+    position: relative;
+}
+
+.evnt-details-info.textarea-fild {
+    width: 100%;
+}
+
+.evnt-info-form.fr-last-fild {
+    justify-content: flex-start;
+}
+
+.evnt-info-form.fr-last-fild em {
+    width: 20px;
+}
+
+.evnt-details-info .iti.iti--allow-dropdown.iti--separate-dial-code {
+    width: 100%;
+}
+
+.accept-termis {
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+}
+
+.accept-termis a {
+    color: #0079CB !important;
+}
+
+.send-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.send-btn button {
+    background: #1278c9;
+    border: unset;
+    padding: 5px 10px;
+    width: 30%;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.evnt-details-info i {
+    position: absolute;
+    right: 20px;
+    top: 45px;
+    color: #0079CB;
+}
+
+.evnt-details-info i.user- {
+    left: 20px;
+    color: #000;
+    font-size: 18px;
+    width: 20px;
+    top: 42px;
+}
+
+input.fr-number-fild {
+    padding: 10px 50px;
+}
+
+.termis-popup-window,
+.condations-popup-window {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #d5d5d5c2;
+    z-index: 999999;
+    display: none;
+}
+
+.termis-popup-window.active,
+.condations-popup-window.active {
+    display: block;
+}
+
+.termis-popup-window.active,
+.condations-popup-window.active {
+    display: block;
+}
+
+.card-window {
+    width: 60%;
+    height: 60%;
+    margin: 10% auto;
+    background: #fff;
+    overflow: hidden;
+    overflow-y: visible;
+    padding: 20px 50px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px #74747478;
+    position: relative;
+}
+
+.close-window {
+    display: flex;
+    justify-content: start;
+    padding: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+/* ******************************** */
+
+
+/* ************************************************************* */
+
+@media screen and (max-width: 800px) {
+    .evnt-details-info {
+        width: 100%;
+    }
+    section.main-creat-event {
+        padding: 20px;
+    }
+    section.main-creat-event strong {
+        font-size: 25px;
+    }
+    section.main-creat-event p {
+        font-size: 12px;
+    }
+}

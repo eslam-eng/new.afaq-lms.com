@@ -1,0 +1,375 @@
+section.login-page {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* background: #000000; */
+    background: #a5a5a5;
+    z-index: 9999;
+}
+
+.login-main.main-body .creat-new-acc span {
+    margin-top: 0px;
+}
+
+.log-layer {
+    position: fixed;
+    width: 100%;
+    z-index: 0;
+    opacity: 0.7;
+    filter: blur(8px);
+    -webkit-filter: blur(4px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.log-layer img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    max-height: 100%;
+}
+
+.log-in-form {
+    position: relative;
+    z-index: 9;
+}
+
+.close-form a {
+    width: 40px;
+    height: 40px;
+    background: #bcbcbc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff !important;
+}
+
+.login-main.main-body {
+    width: 28%;
+    margin: 5rem auto;
+    padding: 40px 30px;
+    border-radius: 24px;
+    box-shadow: 0px 1px 2px #bcbcbca6;
+    margin-bottom: 0;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+    background: #fff;
+}
+
+.close-form {
+    display: flex;
+    justify-content: end;
+}
+
+.sm-log,
+.type-login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.afaq-logo {
+    width: 172px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.afaq-logo img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    max-height: 100%;
+}
+
+.creat-acc-btn {
+    background: whitesmoke;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    padding: 5px 15px;
+}
+
+.creat-acc-btn a {
+    color: #000;
+    text-transform: capitalize;
+    font-weight: 500;
+    display: block;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+}
+
+.type-login span {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    display: block;
+}
+
+.type-way {
+    display: flex;
+    align-items: center;
+}
+
+button.google-login {
+    border: 1px solid #E4E4E4;
+    padding: 5px;
+    border-radius: 50%;
+    background: #E4E4E460;
+    align-items: center;
+    width: 47px;
+    margin: 0 auto;
+    height: 47px;
+}
+
+.log-form-details {
+    position: relative;
+    margin-top: 15px;
+}
+
+.form-gr input,
+.form-gr select {
+    width: 100%;
+    position: relative;
+    margin: 10px 0;
+    border-radius: 24px;
+    background: #F2F6FA83;
+    border: 1px solid #EAEEF0;
+    padding: 10px 18px;
+    font-size: 14px;
+    color: #00000076;
+    appearance: none;
+}
+
+
+/* .grnder-select::after {
+    font-family: 'FONTAWESOME';
+    content: '\f107';
+    position: absolute;
+    right: 20px;
+    top: 25%;
+    pointer-events: none;
+}
+
+.rtl .grnder-select::after {
+    right: unset;
+    left: 20px;
+} */
+
+.rtl .iti--allow-dropdown .iti__flag-container,
+.rtl .iti--separate-dial-code .iti__flag-container {
+    right: 0;
+    left: unset;
+}
+
+.rtl .iti--allow-dropdown input,
+.rtl .iti--allow-dropdown input[type=text],
+.rtl .iti--allow-dropdown input[type=tel],
+.rtl .iti--separate-dial-code input,
+.rtl .iti--separate-dial-code input[type=text],
+.rtl .iti--separate-dial-code input[type=tel] {
+    padding-left: 6px;
+    padding-right: 90px;
+}
+
+.form-gr.register-gr i {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+}
+
+.forget-rememder-pass {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Remember-box em {
+    font-size: 12px;
+    margin: 0 5px;
+}
+
+.termis-condtion em {
+    margin: 0 5px;
+}
+
+.Remember-box {
+    display: flex;
+    align-items: center;
+}
+
+.forget-pass a {
+    font-size: 12px;
+    color: #0076C6 !important;
+}
+
+.submit-log {
+    margin: 20px 0 10px 0;
+    width: 100%;
+}
+
+.submit-log button {
+    background: linear-gradient(100deg, #0076C6, #4CA1DB);
+    border-radius: 24px;
+    width: 100%;
+    padding: 8px 0;
+    font-size: 20px;
+    color: #fff;
+    text-transform: capitalize;
+    border: unset;
+}
+
+.creat-new-acc span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.creat-new-acc span a {
+    color: #0076C6 !important;
+    margin: 0 5px;
+}
+
+.get-nxt-step {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(100deg, #0076C6, #4CA1DB);
+    border-radius: 24px;
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 20px;
+    color: #fff;
+    text-transform: capitalize;
+    border: unset;
+    cursor: pointer;
+}
+
+.get-nxt-step em {
+    position: relative;
+    display: inline-block;
+    padding: 5.2px;
+    color: #000;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 0;
+    background: white;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.get-nxt-step em i {
+    color: #3896d5;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-gr.register-gr {
+    width: 48%;
+}
+
+.form-gr {
+    width: 100%;
+    position: relative;
+}
+
+.login-main.main-body.register-page {
+    margin: 2rem auto;
+    padding: 20px 30px;
+}
+
+.termis-condtion {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 12px;
+}
+
+.termis-condtion a {
+    color: #0076C6 !important;
+    margin: 0 5px;
+}
+
+.secound-step.tabes-step .form-gr input,
+.form-gr select {
+    margin: 5px 0;
+}
+
+.form-gr i.toggle-password {
+    position: absolute;
+    top: 42%;
+    right: 20px;
+    cursor: pointer;
+    color: #A8A8A8;
+}
+
+.form-gr i {
+    top: 58%;
+}
+
+.rtl .form-gr i {
+    left: 20px;
+    right: unset;
+}
+
+.form-gr i {
+    top: 50%;
+}
+
+.iti.iti--allow-dropdown.iti--separate-dial-code,
+.form-gr .iti.iti--allow-dropdown {
+    width: 100%;
+}
+
+input[type="text"]:focus-visible,
+.form-gr select:focus-visible {
+    outline: none;
+}
+
+
+/* .grnder-select::after {
+    font-family: 'FONTAWESOME';
+    content: '\f107';
+    position: absolute;
+    left: 20px;
+    top: 25%;
+    pointer-events: none;
+} */
+
+
+/* ************************* media screen */
+
+@media only screen and (max-width: 1024px) and (min-width: 601px) {
+    .login-main.main-body {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .login-main.main-body {
+        width: 95%;
+    }
+}

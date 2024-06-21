@@ -1,0 +1,852 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+
+@font-face {
+    font-family: 'Segoe UI Local';
+    src: local('Segoe UI Light');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Local';
+    src: local('Segoe UI Semilight');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Local';
+    src: local('Segoe UI');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Local';
+    src: local('Segoe UI Semibold');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Web (West European)';
+    src: url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-light.woff2') format('woff2'), url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-light.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Web (West European)';
+    src: url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semilight.woff2') format('woff2'), url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semilight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Web (West European)';
+    src: url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-regular.woff2') format('woff2'), url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Web (West European)';
+    src: url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semibold.woff2') format('woff2'), url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+/* ******************************* */
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    display: block;
+    text-align: unset !important;
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Segoe UI', sans-serif; */
+    font-family: 'Segoe UI Local', 'Segoe UI Web (West European)';
+    background: #f7f7fa !important;
+}
+
+span,
+em,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+strong {
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Segoe UI', sans-serif; */
+    font-family: 'Segoe UI Local', 'Segoe UI Web (West European)' !important;
+    font-style: normal;
+}
+
+.rtl body,
+.rtl span,
+.rtl em,
+.rtl h1,
+.rtl h2,
+.rtl h3,
+.rtl h4,
+.rtl h5,
+.rtl h6,
+.rtl p,
+.rtl a,
+.rtl li,
+.rtl strong {
+    font-family: 'Tajawal', sans-serif !important;
+}
+
+.col-12,
+.col-10 {
+    padding: 0 !important;
+}
+
+section.search-result-page {
+    background: #fff;
+    padding-top: 200px;
+     /* padding-top: 90px; */
+}
+/* .br-div.px-5{
+    display: none;
+} */
+.all-page-details_lms {
+    background: #f7f7fa !important;
+}
+
+.col-10.offset-1 {
+    margin: 0 auto !important;
+}
+
+.container {
+    width: auto;
+    max-width: 1400px;
+}
+
+a,
+a:hover {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+.afaq-img-log {
+    width: 220px;
+    height: 160px;
+    position: absolute;
+    top: -10px;
+    right: calc(50% - 90px);
+}
+
+.afaq-logo {
+    width: 55%;
+    margin: 0 auto;
+    position: relative;
+    height: 160px;
+    bottom: 80px;
+}
+
+.search-box- {
+    position: relative;
+    width: 100%;
+}
+
+.search-box- input {
+    width: 80%;
+    background: #fff;
+    border: 1px solid #7070709c;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.search-box- button {
+    padding: 8px 17px;
+    background: #88BD2F;
+    border: 1px solid #88BD2F;
+    width: 20%;
+    color: #fff;
+    border-radius: 6px;
+    position: relative;
+    right: 10px;
+    font-size: 20px;
+}
+
+.afaq-img-log img {
+    height: 160px;
+}
+
+.filtter-data input[type="checkbox"] {
+    accent-color: #6c9725;
+    width: 18px;
+    height: 18px;
+}
+
+.filtter-data input[type="radio"] {
+    accent-color: #6c9725;
+    width: 18px;
+    height: 18px;
+}
+
+.search-page-details {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    bottom: 50px;
+}
+
+.search-type-list {
+    width: 20%;
+    position: relative;
+}
+
+.search-result-list {
+    width: 78%;
+    /* border: 1px solid; */
+}
+
+.filtter-icon span {
+    display: none;
+}
+
+.filtter-icon span.active {
+    display: block;
+}
+
+.filtter-title {
+    cursor: pointer;
+    align-items: center;
+    background: #fff;
+    padding: 5px 13px;
+    box-shadow: 0px 8px 26px #d2d2d2;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+}
+
+.all-filtter-data {
+    border: 1px solid #9a9a9a5c;
+    border-radius: 6px;
+}
+
+.filtter-data {
+    cursor: pointer;
+}
+
+.filtter-details {
+    background: #ffffff57;
+    padding: 10px 15px;
+    border-radius: 0 0 6px 6px;
+    /* box-shadow: 0px 2px 1px #d5d5d5; */
+    display: none;
+    height: 0;
+    transition: .3s ease-in-out;
+}
+
+.filtter-data>span {
+    font-size: 15px;
+    color: #0E4C75;
+    font-weight: 600;
+}
+
+.filtter-name strong {
+    color: #0E4C75;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.rtl .search-box- button {
+    right: -10px;
+}
+
+.filtter-icon>span>i {
+    color: #0E4C75;
+}
+
+.filtter-icon .up {
+    display: block;
+}
+
+.filtter-icon .down {
+    display: none;
+}
+
+/* .filtter-icon .down.down-one{
+    display: block;
+}
+.filtter-icon .up.up-one{
+    display: none;
+} */
+/* .rtl .filtter-icon span.up {
+    transform: rotate(180deg);
+} */
+
+.filtter-title.active .filtter-icon .up {
+    display: none;
+}
+
+.filtter-title.active .filtter-icon .down {
+    display: block;
+}
+
+.filtter-details.active {
+    display: block;
+    height: auto;
+    transition: .3s ease-in-out;
+    max-height: 200px;
+    overflow: hidden;
+    overflow-y: visible;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+}
+
+.sort-by select {
+    padding: 5px 15px;
+    border: 2px solid #88bd2f;
+    border-radius: 6px;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: lowercase;
+}
+
+/* ************** style card ********************** */
+.card-activities {
+    /* width: 30%;
+    height: 466px;
+    position: relative;
+    margin: 0 20px; */
+    cursor: pointer;
+}
+
+.card-result {
+    width: 100%;
+}
+
+.card-details {
+    width: clamp(250px, 31%, 400px);
+    height: fit-content;
+    margin: 0 10px;
+    position: relative;
+    box-shadow: 0px 8px 26px #00000017;
+    height: auto;
+    margin-bottom: 25px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-img {
+    height: 230px;
+    max-height: 230px;
+    /* border: unset !important; */
+}
+
+.card-img picture img {
+    width: 100%;
+    height: 230px;
+    position: relative;
+}
+
+.card-img picture {
+    width: 100%;
+    height: 230px;
+}
+
+.Course-type-data {
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+    padding: 2px 10px;
+    top: 0;
+    width: max-content;
+}
+
+.Course-type-data.the_Course {
+    background: #CBCBCB;
+}
+
+.Course-type-data.the_Event {
+    background: #DEDD33;
+}
+
+.Course-type-data.the_Workshop {
+    background: #ABEB3E;
+}
+
+.cours-type-live img {
+    width: 100%;
+    height: 100%;
+}
+
+.cours-type-live {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 127px;
+    height: 95px;
+    padding: 15px;
+}
+
+.card-data {
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    bottom: 40px;
+    /* box-shadow: 0px 8px 26px #00000017; */
+}
+
+.logo-data_,
+.logo-partner {
+    position: relative;
+}
+
+.partner-img_ picture {
+    position: absolute;
+    bottom: 0;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #CECECE;
+    border-radius: 5px;
+}
+
+.partner-img_ picture img {
+    width: 82px !important;
+    height: 74px;
+}
+
+.cost-cours-free {
+    background: #0E4C75;
+    border-radius: 17px;
+    padding: 2px 15px;
+    color: #fff;
+}
+
+.cost-cours-Different-Price {
+    background: #CBCBCB;
+    padding: 3px 15px;
+    border-radius: 17px;
+    color: #000;
+}
+
+.cost-cours span {
+    display: block;
+    background: #FF5100;
+    padding: 2px 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.cost-cours del {
+    color: #CBCBCB;
+}
+
+.cost-cours {
+    display: block;
+    text-align: center;
+}
+
+.details_activities p {
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: bold;
+    margin: 15px 0;
+    height: 50px;
+    overflow: hidden;
+}
+
+.activities_date span,
+.online-coutse span {
+    display: flex;
+    align-items: center;
+    color: #616161;
+    font-size: 12px;
+}
+
+.activities_date span em,
+.online-coutse span em {
+    margin: 0;
+    font-size: 12px;
+    margin: 0 5px;
+}
+
+span.by-name {
+    background: #abeb3e4a;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.rtl span.by-name {
+    right: 0;
+    left: unset;
+}
+
+/* .cme-hours>.cme-top>img {
+    position: absolute;
+    right: 0;
+    left: unset;
+    top: 7px;
+} */
+.cme-hours>.cme-top>img {
+    position: absolute;
+    left: 0;
+    top: 7px;
+}
+
+.online-coutse {
+    margin: 0 0 15px 0;
+}
+
+/* ***************************************** */
+.cme-hours {
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    border: solid #016097 4px;
+    border-radius: 19px;
+}
+
+.cme-hours>.cme-top {
+    width: 100px;
+    height: 35px;
+    border-radius: 17px 17px 0 0;
+    background-color: #fff;
+    position: relative;
+}
+
+.cme-hours>.cme-top>img {
+    width: 30%;
+    margin: auto 10px;
+    object-fit: cover;
+    height: auto !important;
+}
+
+.cme-hours>.cme-top>.stroke-double {
+    position: absolute;
+    z-index: 0;
+    color: #016097;
+    font-size: 40px;
+    right: 10px;
+    bottom: 3px;
+    font-weight: 1000;
+}
+
+.cme-hours>.cme-top>.stroke-double:before {
+    content: attr(title);
+    position: absolute;
+    -webkit-text-stroke: 2px white;
+    left: 0;
+    z-index: -1;
+}
+
+.cme-hours>.cme-top>.stroke-double:after {
+    content: attr(title);
+    position: absolute;
+    -webkit-text-stroke: 7px #016097;
+    left: 0;
+    z-index: -2;
+}
+
+.cme-hours>.cme-top>p {
+    font-size: 8px;
+    font-weight: 1000;
+    position: absolute;
+    right: 5px;
+    /* top: 20px; */
+}
+
+.cme-hours>.cme-bottom {
+    height: 20px;
+    background-color: #016097;
+    border-radius: 0 0 15px 15px;
+    color: #fff;
+    font-size: 9px;
+    text-align: center;
+    display: flex;
+}
+
+.cme-hours>.cme-bottom>p {
+    margin: auto;
+    padding: 0 6px;
+    font-size: 16px;
+}
+
+/* ***************************************** */
+/* ************** pagination style ******************/
+.list-pages ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.list-pages {
+    position: relative;
+    background: #fff;
+    /* padding: 5px 15px; */
+    border: 1px solid #eeebeb;
+    margin: 0 20px;
+    border-radius: 6px;
+    box-shadow: 0px 8px 15px #f1f1f1;
+}
+
+.icon-pagination {
+    color: #88BD2F;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.list-pages ul li {
+    padding: 5px 15px;
+    color: #0E4C75;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+.list-pages ul li.active {
+    border: 1px solid #88BD2F;
+    color: #88BD2F;
+    border-radius: 6px;
+}
+
+.Introduction-What-learn strong {
+    font-size: 20px;
+    margin: 0 10px;
+    /* padding-bottom: 10px; */
+}
+
+.Introduction-What-learn {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.icons {
+    position: relative;
+}
+
+span.small-icon {
+    color: #88BD2F;
+    font-size: 12px;
+    position: absolute;
+    top: 4px;
+    left: -3px;
+}
+
+span.big-icon {
+    color: #DEDD33;
+    font-size: 16px;
+}
+
+.on-small-screen {
+    display: none;
+}
+
+.filtter-btn {
+    background: #88BD2F;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.filtter-btn span,
+.filtter-btn em {
+    color: #fff;
+    margin: 0 7px;
+}
+
+.sort-by {
+    margin: 0 15px;
+}
+.filtter-icon .up i {
+    transform: rotate(90deg);
+}
+
+.filtter-title.active .filtter-icon .down i {
+    transform: rotate(180deg);
+}
+/* ************************* media screen *************************/
+/* ************************* media screen *************************/
+/* ************************* media screen *************************/
+/* ************************* media screen *************************/
+@media screen and (max-width: 800px) {
+    .on-small-screen {
+        display: block;
+    }
+
+    .search-type-list.active .on-small-screen {
+        margin-top: 10px;
+    }
+
+    .sidebar-searhlist {
+        width: 90%;
+        background: #FAFAF9;
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        left: 0;
+        padding: 10px 20px;
+        box-shadow: -3px 6px 10px #00000094;
+    }
+
+    form.filter-form.search-form {
+        position: relative;
+        height: auto;
+        overflow: hidden;
+        overflow-y: visible;
+        max-height: 90%;
+    }
+
+    .col-10.offset-1 {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .afaq-logo {
+        width: 100%;
+    }
+
+    .search-box- button {
+        right: 1px !important;
+        left: unset;
+    }
+
+    .rtl .search-box- button {
+        right: -1px !important;
+    }
+
+    .search-box- input {
+        border-radius: 6px 0 0 6px;
+    }
+
+    .rtl .search-box- input {
+        border-radius: 0px 6px 6px 0px;
+        -webkit-border-radius: 0px 6px 6px 0px;
+        -moz-border-radius: 0px 6px 6px 0px;
+        -ms-border-radius: 0px 6px 6px 0px;
+        -o-border-radius: 0px 6px 6px 0px;
+    }
+
+    .search-type-list {
+        width: 100%;
+        display: block;
+        padding: 10px;
+        background: #414141f2;
+        position: fixed;
+        height: 100%;
+        z-index: 99;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+
+    .search-page-details {
+        display: block;
+        bottom: 0;
+    }
+
+    /* .card-details {
+        width: 100%;
+    } */
+
+    .search-result-list {
+        width: 100%;
+    }
+
+    .search-type-list.active {
+        display: block;
+    }
+
+    .close-filtter-btn i {
+        font-size: 22px;
+        cursor: pointer;
+        color: black;
+    }
+
+    .card-details {
+        width: 100%;
+    }
+
+    .afaq-logo {
+        height: 70px;
+        bottom: 50px;
+    }
+
+    .search-box- {
+        top: 50px;
+    }
+
+    .filtter-btn span,
+    .filtter-btn em {
+        font-size: 16px;
+    }
+
+    .rtl .search-type-list {
+        left: unset;
+        right: 0 !important;
+    }
+
+    .rtl .sidebar-searhlist {
+        right: 0;
+        left: unset;
+    }
+
+    .card-result.d-flex.flex-wrap.mt-3.justify-content-around {
+        margin-top: 20px !important;
+    }
+
+    .Introduction-What-learn strong {
+        font-size: 30px !important;
+    }
+
+    /* .filtter-data>span {
+        font-size: 25px;
+    } */
+    .filtter-name strong{
+        font-size: 22px;
+    }
+    .filtter-data {
+        margin-bottom: 15px !important;
+    }
+
+    .filtter-title {
+        padding: 15px 13px;
+    }
+    .radio-filter span {
+        font-size: 25px;
+    }
+    .card-result .card-details {
+        margin: 2px 0;
+    }
+
+    .card-result .card-details .shared-card.card-activities {
+        margin: 0px !important;
+    }
+    section.search-result-page {
+        padding-top: 90px;
+    }
+    .sort-by select {
+        font-size: 16px;
+    }
+    .all-page-details_lms .afaq-logo{
+        width: 80%;
+    }
+    .filter-list {
+        width: 100%;
+    }
+}

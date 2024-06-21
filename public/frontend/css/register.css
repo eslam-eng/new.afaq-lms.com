@@ -1,0 +1,243 @@
+.register form h1,
+.register form p {
+    color: #3276B1;
+    font-family: 'Tajawal', sans-serif;
+}
+
+button.language-button {
+    color: #ffffff;
+    background-color: #17d292 !important;
+    border-color: #17d292 !important;
+}
+
+
+/* .home-page-nd {
+    background: #f1f4f5!important;
+    padding-bottom: 150px;
+} */
+
+
+/* .register {
+    background: #f1f4f5;
+} */
+
+.register form {
+    margin: 0 100px;
+}
+
+button.language-button:hover {
+    background-color: #3276B1 !important;
+    border-color: #3276B1 !important;
+}
+
+.register form h1,
+.register .text-muted {
+    text-align: center;
+}
+
+.language-button a:hover {
+    color: #ffffff;
+}
+
+.formText {
+    margin: 20px 0;
+}
+
+.ar-form .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    margin-right: -1px;
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.ar-form .input-group>.input-group-prepend>.input-group-text {
+    border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.dropzone.dz-clickable {
+    border-radius: 0.25rem;
+}
+
+input,
+select {
+    border: 1px solid #CCC;
+    width: auto;
+}
+
+.ar-form .intl-tel-input.separate-dial-code .selected-dial-code {
+    padding-left: 0;
+}
+
+.birthSelect .select2-container {
+    width: 30% !important;
+}
+
+@media (max-width: 768px) {
+    .birthSelect .select2-container {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* **************************************************************** new design register -\************************** */
+
+section.register .larg-page {
+    position: relative;
+    bottom: 200px;
+    z-index: 999;
+}
+
+.log-registration-nd span {
+    position: relative;
+    top: 20px;
+    z-index: 9999;
+    right: 0;
+    color: #fff;
+    font-size: 25px;
+}
+
+.login-card-nd {
+    border-radius: 20px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 8px 26px #00000017;
+}
+
+.register form h1,
+.register .login-page-nd h1 {
+    color: #000;
+    font-size: 24px;
+    width: 40%;
+    /* margin     : 0 auto; */
+    line-height: 30px;
+    text-align: center;
+    font-weight: 400;
+    margin: 20px auto;
+    position: relative;
+}
+
+.register form h1:after,
+.register .login-page-nd h1:after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 5px;
+    background: #E5BF45;
+    right: 40px;
+    bottom: -15px;
+    border-radius: 30px;
+}
+
+.form-group {
+    border: 1px solid #bcbcbc91;
+    border-radius: 8px;
+    padding: 1px;
+    overflow: hidden;
+}
+
+.form-group label {
+    padding: 0 8px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.form-group input,
+.form-group .select2-container--default .select2-selection--single {
+    border: none;
+}
+
+.intl-tel-input {
+    width: 100%;
+}
+
+.form-group.checkbox-nd {
+    border: unset;
+    display: flex;
+    align-items: center;
+}
+
+.btn.btn-block {
+    width: max-content !important;
+    padding: 10px 40px;
+    border-radius: 30px;
+    margin: 5px 10px;
+    background: #fff !important;
+    border: 1px solid #30ACCA;
+    color: #000 !important;
+}
+
+.btn.btn-block.act-btn {
+    background: #081839 !important;
+    color: #fff !important;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+    border-color: unset !important;
+}
+
+
+/* ************************************* popup termies and condtion ***************************************/
+
+.condations-nd {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #161616e8;
+    z-index: 9999999999;
+    display: none;
+}
+
+label.required.open-termis {
+    text-decoration: underline;
+    /* font-weight: bold; */
+}
+
+.condations-nd.all-termis-show {
+    display: block;
+}
+
+.all-termis-andcondations {
+    width: 60%;
+    margin: 4% auto;
+    padding: 20px;
+    border-radius: 20px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 8px 26px #00000017;
+    max-height: 90%;
+    overflow: scroll;
+    height: auto;
+    overflow-x: hidden;
+}
+
+.andcondations-nd span:not(.loading_div) {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0;
+    display: block;
+}
+
+.andcondations-nd p {
+    font-size: 14px;
+    color: #3f3f3f !important;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 830px) {
+    section.register .larg-page {
+        bottom: unset;
+    }
+    .log-registration-nd span {
+        color: #000;
+    }
+    .register form {
+        margin: 0;
+    }
+    .register form h1,
+    .register .login-page-nd h1 {
+        width: 100%;
+    }
+    .all-termis-andcondations {
+        width: 95%;
+    }
+}

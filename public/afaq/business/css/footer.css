@@ -1,0 +1,261 @@
+footer.footer-sec {
+    background: #F2F6FA;
+    padding: 50px 0 0 0;
+}
+
+.footer-details {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #C7C7C7;
+    padding-bottom: 40px;
+}
+
+.footer-conatnet ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-conatnet strong {
+    color: #000000;
+    font-size: 16px;
+    margin: 10px 0;
+    display: block;
+}
+
+.footer-conatnet ul li {
+    color: #757779;
+    font-size: 14px;
+}
+
+.footer-conatnet {
+    width: 20%;
+}
+
+.connect-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: end;
+}
+
+.connect-img img {
+    width: 34px;
+    height: 34px;
+}
+
+.connect-details span {
+    display: block;
+    font-size: 12px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.conetct-details-num a {
+    color: #0E4C75 !important;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.conetct-details-num {
+    margin: 0 10px;
+}
+
+.footer-conatnet.footer-connect {
+    width: 35%;
+}
+
+.input-notify {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 20px 0;
+}
+
+.input-notify input {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: unset;
+    width: 70%;
+    font-size: 14px;
+}
+
+.input-notify button {
+    background: #0079cb;
+    border: unset;
+    padding: 10px 10px;
+    border-radius: 20px;
+    color: #fff;
+    text-transform: capitalize;
+    position: relative;
+    right: 10px;
+}
+
+input[type="text"]:focus-visible, .form-gr select:focus-visible {
+    outline: none;
+}
+
+.paymet-way img {
+    height: 70px;
+    width: 70%;
+}
+
+.get-app-afaq {
+    display: flex;
+}
+
+.footer-data {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 30px 0 10px 0;
+}
+
+.get-app-img img {
+    width: 150px;
+    height: 30px;
+}
+
+.get-app-img {
+    margin: 0 10px;
+}
+
+.copt-write-text {
+    text-align: center;
+    display: block;
+    padding: 10px 0;
+}
+
+.copt-write-text span {
+    font-size: 10px;
+    color: #000000;
+}
+
+.fees-write-text {
+    text-align: center;
+    display: block;
+    padding: 10px 0;
+}
+
+.fees-write-text span {
+    font-size: 15px;
+    color: #000000;
+    background: #f1dddd;
+
+}
+.afaq-social span {
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    margin: 0 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.afaq-social {
+    display: flex;
+}
+
+.afaq-social span i {
+    font-size: 14px;
+    color: #0079cb;
+}
+.f-on-mob{
+    display: none;
+}
+.f-on-web{
+    display: block;
+}
+
+/* ************************************************************* */
+@media screen and (max-width: 1000px) {
+    .footer-data{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 800px) {
+    .get-app-img img {
+        width: 50px !important;
+        height: 20px !important;
+    }
+
+    .get-app-img {
+        margin: 0 5px !important;
+    }
+
+    .footer-conatnet {
+        width: 30%;
+    }
+
+    .footer-details {
+        border-bottom: unset !important;
+        padding-bottom: 0;
+    }
+
+    .input-notify {
+        border-bottom: 2px solid #C7C7C7;
+        padding: 0px 0 15px 0;
+    }
+
+    .connect-details {
+        justify-content: start;
+    }
+
+    .footer-payment-way img {
+        width: 180px;
+        height: 40px;
+    }
+
+    .footer-connect-details {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .seical-afaq-bsn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .afaq-social {
+        width: 150px;
+    }
+
+    .get-app-afaq {
+        width: 200px;
+        justify-content: end;
+    }
+
+    .get-copy-write {
+        display: flex;
+        justify-content: start;
+    }
+    .f-on-mob{
+        display: block;
+    }
+    .f-on-web{
+        display: none;
+    }
+    .fir-logo {
+        height: 100px;
+        padding: 0 70px;
+
+    }
+
+    .fir-logo img {
+        width: 100%;
+        height: 95px !important;
+        display: block;
+        object-fit: cover;
+    }
+    .input-notify button{
+        width: 30%;
+    }
+    footer.footer-sec{
+        padding: 10px 0 !important;
+    }
+}

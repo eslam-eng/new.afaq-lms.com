@@ -1,0 +1,41 @@
+.accordion-item .accordion-button{
+    color: #000;
+    /* background-color: #fff; */
+    border: none;
+    box-shadow: none;
+    font-weight: bold;
+    /* font-size: 20px; */
+    text-transform: uppercase;
+}
+
+.accordion-button:not(.collapsed)::after{
+    background-image: url("../../nazil/imgs/purpleArrow.png");
+    background-size: contain;
+}
+
+.accordion-button::after{
+    background-image: url("../../nazil/imgs/purpleArrow.png");
+    background-size: contain;
+}
+
+/* .accordion-button[aria-expanded='false']::before{
+    content: 'Expand';
+    right: 50px;
+    position: absolute;
+    font-weight: normal;
+    font-size: 15px;
+    color: #88BD2F;
+    text-transform: none;
+} */
+
+/* .rtl .accordion-button[aria-expanded='false']::before{
+    content: 'إظهار';
+} */
+
+.accordion-item{
+    border: none;
+}
+
+.list-group-item{
+    border: none !important;
+}

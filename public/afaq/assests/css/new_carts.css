@@ -1,0 +1,136 @@
+.carts-page{
+    position: relative;
+    margin: 0 !important;
+}
+
+.carts-page .right_side_cart_page{
+    margin-top: 37px;
+    margin-bottom: 37px;
+    text-align: center;
+}
+
+.carts-page .right_side_cart_page h1{
+    font-size: 25px;
+    font-weight: bold;
+    color: #2C2C2C;
+    margin-bottom: 24px;
+}
+
+.carts-page .payment_header{
+    border: solid 2px #845097;
+    border-radius: 10px 10px 0 0;
+    font-size: 25px;
+    margin: 0 !important;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    font-weight: 500;
+    background-color: #fff;
+}
+
+.carts-page .payment_header > span, .carts-page .payment_header > form{
+    padding: 25px;
+    background-color: #fff;
+    color: #845097;
+    cursor: pointer;
+    margin: 0 !important;
+}
+
+.carts-page .payment_header > form > button, .carts-page .payment_header > form > a{
+    background-color: #fff;
+}
+
+.carts-page .payment_header > form > button > div, .carts-page .payment_header > form > a > div{
+    height:50px;
+}
+
+.carts-page .payment_header > form > button > div > img, .carts-page .payment_header > form > a > div > img{
+    object-fit: contain;
+}
+
+.carts-page .payment_header > form.selected{
+    background-image: linear-gradient(-90deg, #8E2A8A, #6446A1);
+    color: #fff;
+}
+
+.carts-page .payment_body{
+    background-color: #fff;
+    color: #000;
+    padding: 25px;
+}
+
+.carts-page .bank_image{
+    width: 150px;
+    height: 71px;
+}
+
+.carts-page .bank_image img{
+    border: solid 1px #00B1DA;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.carts-page .bank_number{
+    padding: 10px 25px 0 25px;
+    font-weight: bold;
+}
+
+.carts-page .submit_payment_application {
+    background-color: #fff;
+    padding: 0 25px 25px;
+}
+
+.carts-page .submit_payment_application button{
+    background-image: linear-gradient(-90deg, #8E2A8A, #6446A1);
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.carts-page .current_balance{
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 21px;
+    justify-content: space-between;
+    color: #2C2C2C;
+}
+
+.carts-page .total_balance{
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 21px;
+    justify-content: space-between;
+    color: #2C2C2C;
+    margin-top: 22px;
+}
+
+.total_balance > div > del{
+    font-size: 17px;
+    color: #777;
+}
+
+.total_balance > div > span{
+    font-size: 32px;
+    font-weight: 600;
+}
+.carts-card >div {
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 830px){
+    .carts-page .payment_header > span, .carts-page .payment_header > form{
+        padding: 10px 0;
+        width: 25%;
+    }
+    .carts-page .payment_body{
+        flex-direction: column !important;
+    }
+    .carts-page .bank_image{
+        margin: auto;
+    }
+}

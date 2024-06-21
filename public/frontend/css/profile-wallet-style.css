@@ -1,0 +1,753 @@
+/* ******************** style for wallet page **************************/
+.wallet-card {
+    padding: 10px 20px !important;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+/* .cost-side,
+.details-side {
+    width: 48%;
+    width: clamp(400px, 48%, 600px);
+} */
+.cost-side {
+    width: 53%;
+}
+
+.details-side {
+    width: 45%;
+}
+
+.card-wallet {
+    background: #fff;
+    box-shadow: 0px 8px 16px #a4a4a4;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.ltr .card-wallet strong {
+    direction: ltr;
+}
+
+.rtl .card-wallet strong {
+    direction: rtl;
+}
+
+.smart-wallet {
+    display: block;
+    text-align: center;
+}
+
+.wallet-img {
+    width: 55px;
+    height: 48px;
+    margin: 20px auto;
+}
+
+.smart-wallet span {
+    color: #CBCBCB;
+    display: block;
+    font-size: 14px;
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+.smart-wallet strong {
+    font-size: 35px;
+    color: #000;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.the-wallet-img img {
+    width: 120px;
+    height: 120px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.wallet-work {
+    width: 70%;
+    padding: 10px;
+}
+
+.the-wallet-img {
+    width: 30%;
+}
+
+.wallet-work strong {
+    font-size: 16px;
+    color: #000;
+    padding-bottom: 10px;
+    display: block;
+}
+
+.wallet-work p {
+    color: #9B9B9B;
+    font-size: 14px;
+}
+
+.afaq-qs {
+    position: relative;
+    margin-top: 40px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 8px 16px #a4a4a4;
+}
+
+.afaq-qs>div {
+    padding-bottom: 18px;
+}
+
+span.view-all {
+    color: #0079CB;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+span.up {
+    display: none;
+}
+
+.qs-name {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.qs-name span.up {
+    color: #0079CB;
+}
+
+div.answer-details {
+    border: 1px solid #bcbcbca1;
+    border-top: unset;
+    padding: 10px;
+    border-radius: 6px;
+    height: 0;
+    overflow-y: visible;
+    overflow-x: hidden;
+    transition: .3s ease-in-out;
+    opacity: 0;
+    display: none;
+    font-size: 12px;
+    color: #909090;
+}
+
+
+.all-qs-afaq.active span.down {
+    display: none;
+}
+
+.all-qs-afaq.active span.up {
+    display: block;
+}
+
+.all-qs-afaq.active div.answer-details {
+    height: auto;
+    max-height: 290px;
+    transition: .3s ease-in-out;
+    opacity: 1;
+    display: block;
+}
+
+.wallet-points {
+    padding: 10px 20px !important;
+    padding-top: 0 !important;
+}
+
+.title-wallet {
+    cursor: pointer;
+    color: #2C2C2C;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 10px;
+    width: max-content;
+}
+
+.title-wallet.active {
+    color: #00b1da;
+    text-decoration: underline;
+}
+
+span.fk-wdth {
+    display: inline-block;
+    width: 20px;
+}
+
+.details-side {
+    position: relative;
+    bottom: 40px;
+}
+
+.wallet-section,
+.points-section {
+    display: none;
+}
+
+.wallet-section.active,
+.points-section.active {
+    display: block;
+}
+
+.the-wallet-img.points-img img {
+    width: 112px;
+    height: 112px;
+    padding: 10px;
+}
+
+.wallet-work p em {
+    font-size: 18px;
+    color: #845097;
+    font-weight: 600;
+}
+.myprofile-title.wallet- h3::before {
+    background-color: #00B1DA;
+    z-index: 0;
+}
+.balance-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.balance-count {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.my-balance-count {
+    display: block;
+}
+
+.my-balance-count span {
+    display: block;
+    padding: 10px 0;
+}
+
+.img-points .the-wallet-img.points-img {
+    width: 100%;
+}
+
+span.fk-w {
+    display: inline-block;
+    width: 20px;
+}
+
+.my-balance-count strong {
+    color: #000000;
+    font-size: 26px;
+}
+
+.InviteFriends {
+    color: #00B1DA;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.InviteFriends i {
+    margin: 0 10px;
+}
+
+.replace-allpoints {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 45%;
+}
+
+span.point-numb {
+    border: 1.6px solid #CBCBCB;
+    border-radius: 4px;
+    padding: 3px 10px;
+    font-size: 18px;
+    color: #845097;
+    font-weight: 600;
+}
+
+span.point-numb em {
+    color: #9B9B9B;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.img-reblace {
+    width: 28px;
+    height: 25px;
+}
+
+.replace-points {
+    padding: 20px 10px 10px 10px;
+}
+
+.the-Coupon-box {
+    position: relative;
+    border: 1.6px solid #CBCBCB;
+    width: 73%;
+    padding: 3px 10px;
+    border-radius: 4px;
+}
+
+.the-Coupon-box input {
+    border: unset;
+    width: 80%;
+    /* padding: 3px 10px; */
+    /* border-radius: 4px; */
+    position: relative;
+    left: 10px;
+}
+
+.the-Coupon-box input::placeholder {
+    font-size: 14px;
+    padding: 0 15px;
+}
+
+.the-Coupon-box:before {
+    /* content: ''; */
+    position: absolute;
+    width: 20px;
+    height: 19px;
+    left: 6px;
+    top: 6px;
+    background-image: url("../../../afaq/imgs/ticket.png");
+    background-repeat: no-repeat;
+}
+
+.rtl .the-Coupon-box:before {
+    right: 0;
+    left: unset;
+}
+
+.Coupon-Code.Coupon-box button {
+    border: unset;
+    background: #845097;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 4px;
+    padding: 4px 10px;
+}
+
+.Coupon-Code.Coupon-box {
+    justify-content: space-between;
+}
+
+.Redeem-Points {
+    padding: 25px 10px 10px 10px;
+}
+
+.Redeem-Points button {
+    background: linear-gradient(45deg, #8E2A8A, #6446A1);
+    border: unset;
+    border-radius: 30px;
+    padding: 4px 25px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    height: fit-content;
+}
+
+.code-invite {
+    display: flex;
+    align-items: center;
+}
+
+.code-invite span {
+    color: #000000;
+    margin: 0 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.code-numb em {
+    color: #9B9B9B;
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+.code-numb i {
+    color: #00B1DA;
+    cursor: pointer;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+.InviteFriends-popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #9e9e9ea8;
+    z-index: 99;
+    display: none;
+}
+
+.InviteFriends-popup.active {
+    display: block;
+}
+
+span.close-window {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.card-share {
+    margin: 10rem auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 30px #0000008f;
+    background-color: #fff;
+    width: 25vw;
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+span.fk-popup {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background: #9e9e9ea8;
+}
+.card-share .social-icons a i {
+    font-size: 25px;
+}
+.card-share .social-icons a {
+    margin: 0 10px;
+}
+.card-share .social-icons {
+    margin: 30px 30px 10px 30px;
+    justify-content: center;
+    align-items: center;
+}
+.on-webscreen {
+    display: block;
+}
+
+.on-smallscreen {
+    display: none;
+}
+
+.Introduction-What-learn {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.icons {
+    position: relative;
+}
+
+span.small-icon {
+    color: #88BD2F;
+    font-size: 12px;
+    position: absolute;
+    top: 4px;
+    left: -3px;
+}
+
+.decription_lms {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 8px 26px #dbdbdbab;
+    margin: 20px 0;
+}
+
+span.big-icon {
+    color: #DEDD33;
+    font-size: 16px;
+}
+
+.Introduction-What-learn strong {
+    font-size: 20px;
+    margin: 0 10px;
+    /* padding-bottom: 10px; */
+}
+
+span.input-img {
+    position: absolute;
+    left: 5px;
+}
+
+.my-balance-count span {
+    color: #CBCBCB;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+
+
+/* ************************************************* media screen start ****************************************************** */
+/* ************************************************* media screen start ****************************************************** */
+/* ************************************************* media screen start ****************************************************** */
+/* ************************************************* media screen start ****************************************************** */
+/* ************************************************* media screen start ****************************************************** */
+@media screen and (max-width: 1200px) {
+
+    .img-points-smc {
+        text-align: center;
+    }
+
+    .img-points-smc .the-wallet-img.points-img img {
+        width: 86px;
+        height: 86px;
+    }
+
+    .blanc-points-smc .my-balance-count {
+        text-align: center;
+    }
+
+    .blanc-points-smc .my-balance-count span {
+        padding-top: 0;
+        padding-bottom: 5px;
+        color: #CBCBCB;
+    }
+
+    .blanc-points-smc .my-balance-count strong {
+        font-size: 24px;
+        padding-bottom: 10px;
+        display: block;
+    }
+
+    .transfel-smc .replace-allpoints {
+        width: 100%;
+        padding: 0 25px;
+    }
+
+    .transfel-smc {
+        margin-bottom: 25px;
+    }
+
+    .btn-transfel-smc button {
+        background: linear-gradient(45deg, #8E2A8A, #6446A1);
+        width: 100%;
+        border-radius: 30px;
+        padding: 10px 0;
+        border: unset;
+        color: #fff;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .share-smc {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .cost-side,
+    .details-side {
+        width: 100% !important;
+    }
+
+    .wallet-card {
+        padding: 10px 0 !important;
+    }
+
+    .copy-cd-smc {
+        width: 48%;
+    }
+
+    .copy-cd-smc .code-invite {
+        flex-wrap: wrap;
+    }
+
+    .copy-cd-smc .code-invite label,
+    .copy-cd-smc label {
+        font-size: 14px;
+        color: #000000;
+        font-weight: 600;
+        display: block;
+        width: 100%;
+    }
+
+    .copy-cd-smc .code-invite .code-numb {
+        display: flex;
+        align-items: center;
+    }
+
+    .input-apply-code {
+        display: flex;
+        align-items: center;
+    }
+
+    .input-apply-code input {
+        width: 80%;
+        border: 1px solid #CBCBCB;
+        border-radius: 4px;
+        position: relative;
+        left: 2px;
+    }
+
+    .input-apply-code button {
+        border: 1px solid #0079CB;
+        background: #fff;
+        border-radius: 4px;
+        z-index: 1;
+    }
+
+    .btn-transfel-smc {
+        padding: 0 10px;
+    }
+
+    .card-share {
+        width: 90%;
+        margin-top: 10rem !important;
+    }
+
+    .rtl .input-apply-code input {
+        left: 2px;
+    }
+
+    .input-apply-code input::placeholder {
+        font-size: 12px;
+    }
+    .details-side {
+        bottom: 0;
+        margin-top: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 830px) {
+    .img-points-smc {
+        text-align: center;
+    }
+
+    .img-points-smc .the-wallet-img.points-img img {
+        width: 86px;
+        height: 86px;
+    }
+
+    .blanc-points-smc .my-balance-count {
+        text-align: center;
+    }
+
+    .blanc-points-smc .my-balance-count span {
+        padding-top: 0;
+        padding-bottom: 5px;
+        color: #CBCBCB;
+    }
+
+    .blanc-points-smc .my-balance-count strong {
+        font-size: 24px;
+        padding-bottom: 10px;
+        display: block;
+    }
+
+    .transfel-smc .replace-allpoints {
+        width: 100%;
+        padding: 0 25px;
+    }
+
+    .transfel-smc {
+        margin-bottom: 25px;
+    }
+
+    .btn-transfel-smc button {
+        background: linear-gradient(45deg, #8E2A8A, #6446A1);
+        width: 100%;
+        border-radius: 30px;
+        padding: 10px 0;
+        border: unset;
+        color: #fff;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .share-smc {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .cost-side,
+    .details-side {
+        width: 100% !important;
+    }
+
+    .wallet-card {
+        padding: 10px 0 !important;
+    }
+
+    .copy-cd-smc {
+        width: 48%;
+    }
+
+    .copy-cd-smc .code-invite {
+        flex-wrap: wrap;
+    }
+
+    .copy-cd-smc .code-invite label,
+    .copy-cd-smc label {
+        font-size: 14px;
+        color: #000000;
+        font-weight: 600;
+        display: block;
+        width: 100%;
+    }
+
+    .copy-cd-smc .code-invite .code-numb {
+        display: flex;
+        align-items: center;
+    }
+
+    .input-apply-code {
+        display: flex;
+        align-items: center;
+    }
+
+    .input-apply-code input {
+        width: 80%;
+        border: 1px solid #CBCBCB;
+        border-radius: 4px;
+        position: relative;
+        left: 2px;
+    }
+
+    .input-apply-code button {
+        border: 1px solid #0079CB;
+        background: #fff;
+        border-radius: 4px;
+        z-index: 1;
+    }
+
+    .btn-transfel-smc {
+        padding: 0 10px;
+    }
+
+    .card-share {
+        width: 90%;
+        margin-top: 10rem !important;
+    }
+
+    .rtl .input-apply-code input {
+        left: 2px;
+    }
+
+    .input-apply-code input::placeholder {
+        font-size: 12px;
+    }
+    .details-side {
+        bottom: 0;
+        margin-top: 20px;
+    }
+    .on-webscreen {
+        display: none;
+    }
+
+    .on-smallscreen {
+        display: block;
+    }
+}

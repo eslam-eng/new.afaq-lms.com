@@ -1,0 +1,153 @@
+/* Popup container - can be anything you want */
+.cart_popup {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  }
+
+  /* The actual popup */
+div.cart_popup_text {
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: #161616e8;
+  color: #fff;
+  text-align: center;
+  /* border-radius: 6px; */
+  padding: 30px;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  /* margin-left: -80px; */
+}
+
+.cart_popup_text h4{
+  text-shadow: 1px 1px 0 #000;
+}
+
+/* Popup arrow */
+div.cart_popup_text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+div.cart_popup_text.show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  font-weight: bold;
+}
+
+.cart_popup_text i{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* cart details start */
+.cart-option-details_popup{
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 30px #0000008f;
+}
+.cart-option-details_popup .reserved-details-cart:last-child{
+  flex-direction: column;
+}
+.cart-option-details_popup .img-cart-reserved{
+  width: unset;
+  height: unset;
+  max-width: unset;
+  min-width: unset;
+  max-height: unset;
+  min-height: unset;
+}
+.cart-option-details_popup .img-cart-reserved img{
+  border-radius: 10px;
+}
+.cart-option-details_popup .all-carts-reserved{
+  max-height: 80vh;
+}
+.cart-option-details_popup .carts-reserved-details{
+  max-height: 80vh;
+}
+/* cart details end */
+
+
+.popup_cart_count{
+  position: absolute;
+  color: #8E2A8A;
+  left: 30px;
+  bottom: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  font-size: 21px;
+  font-weight: bold;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  box-shadow: 1px -1px 7px #00000047;
+}
+
+/* fixed cart icon start */
+.fixed_cart_icon{
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  bottom: 5vh;
+  left: 5vh;
+  background-color: #fff;
+  color: #fff;
+  padding: 15px 20px 7px 7px;
+  border-radius: 0 50px 0 0;
+  /* font-size: 30px; */
+  width: 75px;
+  text-align: center;
+  justify-content: center;
+  height: 75px;
+  flex-direction: column;
+  cursor: pointer;
+  box-shadow: 0 0 7px #00000047;
+}
+
+.fixed_cart_icon img{
+  object-fit: contain;
+}
+/* fixed cart icon end */
+
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+@media only screen and (max-width: 830px){
+  .fixed_cart_icon{
+      display: flex;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 60px;
+      font-size: 25px;
+  }
+}

@@ -1,0 +1,350 @@
+.login-page_lms {
+    position: relative;
+    padding: 100px 0;
+}
+
+.log-in-conteiner {
+    width: 30%;
+    margin: 3% auto;
+}
+
+.afaq-img-L {
+    display: block;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.afaq-img-L img {
+    width: 130px;
+    height: 122px;
+    padding: 20px;
+}
+
+.login-title {
+    display: block;
+    text-align: center;
+    margin: 10px 0 20px 0;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+form.form-login {
+    padding: 10px;
+}
+
+.log-in-input {
+    display: block;
+    margin: 20px 0;
+    position: relative;
+}
+
+.log-in-input label {
+    display: block;
+    font-size: 16px;
+    color: #000;
+}
+
+.log-in-input input, .log-in-input select {
+    width: 100%;
+    position: relative;
+    border: 1px solid #CBCBCB;
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+
+.selectContainer {
+    position: relative;
+}
+
+.selectContainer::after {
+    font-family: 'FONTAWESOME';
+    content: '\f107';
+    position: absolute;
+    left: 20px;
+    top: 25%;
+    pointer-events: none;
+}
+
+.ltr .selectContainer::after {
+    left: unset;
+    right: 20px;
+}
+
+.selectContainer select {
+    cursor: pointer;
+}
+
+.log-in-input i {
+    position: absolute;
+    top: 60%;
+    right: 20px;
+    cursor: pointer;
+    color: #A8A8A8;
+}
+
+.log-in-input:nth-child(2) {
+    margin-bottom: 0 !important;
+}
+
+span.remember-afaq u {
+    font-size: 14px;
+    margin: 0 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+span.remember-afaq,
+.forget-pass {
+    margin: 10px 0;
+}
+
+em.forget-pass a {
+    font-size: 12px;
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+
+.btn-log {
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.btn-log button {
+    width: 100%;
+    background: linear-gradient(45deg, #0E4C75, #08619dde, #0079cbe6);
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    border: unset;
+    padding: 10px;
+    border-radius: 6px;
+    position: relative;
+}
+
+.btn-log button:after {
+    font-family: 'FONTAWESOME';
+    content: '\f061';
+    position: absolute;
+    right: 20px;
+    top: 20%;
+}
+
+.rtl .btn-log button:after {
+    content: '\f060';
+    right: unset;
+    left: 20px;
+}
+
+.another-way strong {
+    text-align: center;
+    display: block;
+    margin: 30px 0;
+    color: #0E4C75;
+    font-size: 20px;
+}
+
+span.apple-icon,
+.google-icon {
+    width: 40%;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+}
+
+span.apple-icon {
+    background: #000;
+    border-radius: 6px;
+}
+
+span.google-icon {
+    background: #fff;
+    box-shadow: 0px 8px 26px #c9c9c985;
+    /* margin: 0 15px; */
+}
+
+.creat-acc {
+    text-align: center;
+    margin: 40px 0 0px 0;
+}
+
+.creat-acc a {
+    font-size: 16px;
+    color: #0079CB !important;
+    text-decoration: underline !important;
+}
+
+section.register-page.login-page_lms:before {
+    background-image: url("../../imgs/maskk33.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    top: 0;
+}
+section.register-page.login-page_lms:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: #2727276e;
+}
+.register-page-afaq {
+    width: 60%;
+    margin: 4% auto;
+    background: #fff;
+    padding: 20px 80px;
+    position: relative;
+    box-shadow: 0px 8px 26px #c0c0c0db;
+    z-index: 1;
+}
+
+.rg-afaq.log-in-input {
+    width: 47%;
+    position: relative;
+    margin: 10px 0;
+}
+
+.details-type {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.details-type span i {
+    font-size: 22px;
+}
+.details-type span.active i {
+    color: #88BD2F;
+    font-size: 22px;
+}
+.details-type span.active{
+    color: #000;
+}
+.details-type span {
+    display: flex;
+    align-items: center;
+    color: #CBCBCB;
+}
+
+.details-type span em {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.another-way-afaq {
+    width: 45%;
+    margin: 20px auto 0 auto;
+}
+
+.accept-termis span a {
+    color: #1968FF !important;
+}
+
+.accept-termis span {
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+.accept-termis {
+    margin: 10px 0 20px 0;
+    display: block;
+}
+
+.rg-afaq.log-in-input i {
+    top: 50%;
+}
+
+.rg-afaq.log-in-input.confirmation-input i {
+    top: 58%;
+}
+
+.iti.iti--allow-dropdown {
+    width: 100%;
+}
+.not-now{
+    display: none;
+}
+.rtl .log-in-input i {
+    left: 20px;
+    right: unset;
+}
+.modal-Checkout-lms.condations-nd,.modal-Checkout-lmss.condations-nd{
+    display: none;
+}
+.modal-Checkout-lms.condations-nd.active,.modal-Checkout-lmss.condations-nd.active {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    background: #d5d5d5c2;
+    display: block;
+
+}
+.close-icons {
+    position: fixed;
+    font-size: 50px;
+    cursor: pointer;
+    z-index: 9;
+    top: 90px;
+    left: 3%;
+
+}
+.termis-data {
+    width: 60%;
+    height: 60%;
+    margin: 10% auto;
+    background: #fff;
+    overflow: hidden;
+    overflow-y: visible;
+    padding: 20px 50px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px #74747478;
+}
+.termis-data section.about-us-page.container {
+    height: auto;
+    overflow-y: scroll;
+    max-height: 90vh;
+    z-index: 9;
+    position: relative;
+    background: #fff;
+    margin: 3% auto;
+}
+
+/* ************************************************* media screen ****************************************************** */
+/* ************************************************* media screen ****************************************************** */
+/* ************************************************* media screen ****************************************************** */
+/* ************************************************* media screen ****************************************************** */
+/* ************************************************* media screen ****************************************************** */
+@media screen and (min-width: 851px) and (max-width: 1200px) {
+    .log-in-conteiner {
+        width: 100% !important;
+        margin: 0 auto;
+    }
+    .d-flex.justify-content-between.fg-details {
+        display: block !important;
+    }
+}
+@media screen and (max-width: 800px) {
+    .log-in-conteiner {
+        width: 100% !important;
+        margin: 0 auto;
+    }
+    .register-page-afaq,
+    .another-way-afaq,
+    .rg-afaq.log-in-input {
+        width: 100%;
+        padding: 10px;
+    }
+    .d-flex.justify-content-between.fg-details {
+        display: block !important;
+    }
+}

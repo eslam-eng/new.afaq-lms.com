@@ -1,0 +1,66 @@
+.br-div {
+    background-image: url('/afaq/imgs/Groupghkl19492.png');
+    height: 200px;
+    position: relative;
+    font-size: 1.2rem;
+    padding: 0 3rem;
+}
+
+.br-ul {
+    color: #FFF;
+    list-style: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: absolute;
+    bottom: 2.5rem;
+    font-size: 16px;
+    left: 12%;
+    padding: 0;
+}
+.rtl .br-ul {
+    right: 12%;
+    left: unset;
+}
+.br-ul li {
+    display: inline-block;
+}
+.br-ul li:last-of-type{
+    font-weight: 900;
+    font-size: 1.3rem;
+    font-size: 16px;
+}
+
+section.Message-Us{
+    right: 1rem !important;
+}
+.br-ul li{
+    /* display: flex; */
+    /* align-items: center; */
+    /* width: 12%; */
+}
+ul.br-ul {
+    width: 50rem;
+    overflow: hidden;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.br-ul li:last-of-type {
+    width: 32rem;
+    height: 25px;
+    overflow: hidden;
+}
+@media only screen and (max-width: 830px){
+    .br-div {
+        padding: 50px 0 0;
+        display: none;
+    }
+    .br-div.px-5 {
+        padding: 50px 0 !important;
+        height: 140px;
+    }
+}
+.br-div.px-5 {
+    display: none;
+}

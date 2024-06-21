@@ -1,0 +1,194 @@
+/* USER PROFILE PAGE */
+.card {
+    margin-top: 20px;
+    padding: 30px;
+    background-color: rgba(214, 224, 226, 0.2);
+    -webkit-border-top-left-radius:5px;
+    -moz-border-top-left-radius:5px;
+    border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-top-right-radius:5px;
+    border-top-right-radius:5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.card.hovercard {
+    position: relative;
+    padding-top: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 1);
+}
+.card.hovercard .card-background {
+    height: 130px;
+}
+.card-background img {
+    -webkit-filter: blur(25px);
+    -moz-filter: blur(25px);
+    -o-filter: blur(25px);
+    -ms-filter: blur(25px);
+    filter: blur(25px);
+    margin-left: -100px;
+    margin-top: -200px;
+    min-width: 130%;
+}
+.card.hovercard .useravatar {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+}
+.card.hovercard .useravatar img {
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+}
+.card.hovercard .card-info {
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+    right: 0;
+}
+.card.hovercard .card-info .card-title {
+    padding:0 5px;
+    font-size: 20px;
+    line-height: 1;
+    color: #262626;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.card.hovercard .card-info {
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 20px;
+    color: #737373;
+    text-overflow: ellipsis;
+}
+.card.hovercard .bottom {
+    padding: 0 20px;
+    margin-bottom: 17px;
+}
+.btn-pref .btn {
+    -webkit-border-radius:0 !important;
+}
+
+.quiz_list ol.qa-form li .radio input.qod_option {
+    margin-left: 0;
+}
+.content-floor-links {
+    background-size: cover;
+}
+
+.relative-position {
+    position: relative;
+}
+.content-floor-links .title-bar {
+    background-color: #012d62;
+    background-size: 100% 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+.content-floor-links .title-bar .title {
+    padding-left: 15px;
+    height: 80px;
+}
+.vertical-center-txt {
+    display: table-cell;
+    vertical-align: middle;
+}
+.content-floor-links .title-bar .title h3 {
+    color: #fff;
+    margin: 0;
+}
+.content-floor-links .sub-cat-links {
+    margin: 0;
+    text-align: right;
+    height: 80px;
+}
+.content-floor-links .sub-cat-links li {
+    padding: 0;
+    width: 16.66%;
+    box-shadow: 0 0 1px rgba(0,0,0,0.3) inset;
+    border-left: 1px solid #012d62;
+    display: inline-block;
+    height: 80px;
+    font-weight: bold;
+    margin-left: 0;
+    overflow: hidden;
+}
+.content-floor-links .sub-cat-links div {
+    display: table;
+    width: 100%;
+    height: 80px;
+}
+.content-floor-links .sub-cat-links li a {
+    padding: 0 10px 0;
+    text-transform: uppercase;
+    display: table-cell;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    word-wrap: break-word;
+    vertical-align: middle;
+}
+.content-floor-links .sub-cat-links li a span {
+    display: block;
+    max-height: 42px;
+    overflow: hidden;
+}
+.content-floor-links .copy-panel {
+    vertical-align: middle;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.content-floor-links .copy-panel>div {
+    float: none;
+}
+
+.content-floor-links .col75 {
+    border: 0 !important;
+}
+.content-floor-links .copy-panel .copy-panel-body {
+    padding: 20px 0;
+}
+.act-blue {
+    color: #012d62;
+}
+.act-gold {
+    color: #012d62;
+}
+.quiz-next {
+    text-align: right;
+    margin: 30px 15px 0 0;
+}
+
+.brdr-top {
+    border-top: 1px solid #CCC;
+}
+body .btn-act-primary, body .btn-act-default, body .btn-act-light-blue-icon, body .btn-act-light-blue {
+    color: #fff;
+    border-color: #07a;
+    background-color: #07a;
+    padding: 15px 20px;
+    margin: 20px 0;
+}
+.pull-left {
+    float: left !important;
+}
+body .btn-act-primary:active, body .btn-act-default:active, body .btn-act-light-blue-icon:active, body .btn-act-light-blue:active, body .btn-act-primary.active, body .btn-act-default.active, body .btn-act-light-blue-icon.active, body .btn-act-light-blue.active {
+    color: #fff;
+    background-color: #042e60;
+    border: 1px solid #fff;
+}

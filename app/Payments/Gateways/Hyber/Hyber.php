@@ -1,0 +1,330 @@
+<?php
+
+namespace App\Payments\Gateways\Hyber;
+
+use App\Models\BusinessPackage;
+use App\Payments\Gateways\GatewayInterface;
+use App\Payments\Gateways\Hyber\Config;
+use App\Models\Enroll;
+use App\Models\Course;
+use App\Models\CancelationPolicy;
+use App\Models\Cart;
+use App\Models\Payment;
+use App\Models\PaymentMethod;
+use Carbon\Carbon;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Redirect;
+
+class Hyber implements GatewayInterface
+{
+    private $ENTITY_ID;
+    private $MADA_ENTITY_ID;
+    private $API_KEY;
+    private $API_URL;
+    public $success_url;
+    public $name = "Hyber";
+    public $method_id = 10001;
+    public $type = "api";
+    public $method_name = 'VISA';
+    public $response = null;
+    public $success_codes = [
+        "000.000.000",
+        "000.000.100",
+        "000.100.105",
+        "000.100.106",
+        "000.100.110",
+        "000.100.111",
+        "000.100.112",
+        "000.300.000",
+        "000.300.100",
+        "000.300.101",
+        "000.300.102",
+        "000.300.103",
+        "000.310.100",
+        "000.310.101",
+        "000.310.110",
+        "000.400.110",
+        "000.400.120",
+        "000.600.000",
+        "000.400.000",
+        "000.400.010",
+        "000.400.020",
+        "000.400.040",
+        "000.400.050",
+        "000.400.060",
+        "000.400.070",
+        "000.400.080",
+        "000.400.081",
+        "000.400.082",
+        "000.400.090",
+        "000.400.100"
+    ];
+    public $pending_codes = [
+        "000.200.000",
+        "000.200.001",
+        "000.200.100",
+        "000.200.101",
+        "000.200.102",
+        "000.200.103",
+        "000.200.200",
+        "000.200.201",
+        "100.400.500",
+        "800.400.500",
+        "800.400.501",
+        "800.400.502"
+    ];
+
+    public $rejected_code = [];
+    public function __construct($method_id = null, $id = null)
+    {
+        if (Config::$MODE == "live") {
+            $this->ENTITY_ID = Config::$ENTITY_ID;
+            $this->API_KEY = Config::$API_KEY;
+            $this->API_URL = Config::$API_URL;
+            $this->success_url = Config::$SUCCESS_URL;
+        } else {
+            $this->ENTITY_ID = Config::$ENTITY_ID;
+            $this->API_KEY = Config::$TEST_API_KEY;
+            $this->API_URL = Config::$TEST_API_URL;
+            $this->success_url = Config::$TEST_SUCCESS_URL;
+        }
+
+        try {
+            $method = PaymentMethod::select('id', 'name_en')->where('provider_method_id', $method_id)->first();
+            $this->method_id = $method->id;
+            $this->method_name = $method->name_en;
+
+            if ($this->method_name == 'MADA') {
+                $this->ENTITY_ID = Config::$MADA_ENTITY_ID;
+            }
+
+            if ($this->method_name == 'APPLEPAY') {
+                $this->ENTITY_ID = Config::$APPLE_ENTITY_ID;
+            }
+        } catch (\Throwable $th) {
+            //throw $th;
+        }
+    }
+
+    public function pay($invoiceData)
+    {
+        $merchant_id = time() . rand(0, 1000);
+        $user = Auth::user();
+
+        $postFields =
+            "entityId=" . $this->ENTITY_ID;
+
+        $city = $user->city ?? null;
+        if ($city && !preg_match('/[^A-Za-z0-9]/', $city)) {
+            $city =  $user->city;
+        } else {
+            $city = "Riyadh";
+        }
+
+        $name_title = "Mr";
+
+        $postFields .=  "&amount=" . $invoiceData['amount'] .
+            "&currency=SAR" .
+            "&merchantTransactionId=" . $merchant_id .
+            "&customer.email=" . $user->email .
+            "&billing.street1= " . $city .
+            "&billing.city= " . $city .
+            "&billing.postcode= 11461" .
+            "&customer.givenName= " . $user->full_name_en .
+            "&customer.surname=" . $name_title .
+            "&billing.state= " . $city  .
+            "&billing.country=SA";
+        $postFields .= "&paymentType=DB";
+
+        if (isset($invoiceData['payment_id'])) {
+            $payment = Payment::where('transaction', $invoiceData['payment_id'])->first();
+            $items = $payment->payment_details;
+            foreach ($items as $key => $item) {
+                $postFields .= "&cart.items[" . $key . "].price=" . $item->final_price . "&cart.items[" . $key . "].merchantItemId=" . $item->course_id . "&cart.items[" . $key . "].sellerId=" . $item->id . "&cart.items[" . $key . "].discount=" . (int)(($item->offer / $item->price) * 100)  ?? 0;
+                //    if ($item->coupon) {
+                //        $postFields .= "&cart.items[" . $key . "].name=" . $item->coupon;
+                //    }
+            }
+        } else {
+            $cart = Cart::where(['user_id' => auth()->user()->id, 'status' => 0])->latest()->first();
+            if ($cart) {
+                $items = $cart->items;
+                foreach ($items as $key => $item) {
+                    $postFields .= "&cart.items[" . $key . "].price=" . $item->course_price . "&cart.items[" . $key . "].merchantItemId=" . $item->course_id . "&cart.items[" . $key . "].sellerId=" . $item->id . "&cart.items[" . $key . "].discount=" . (int)(($item->coupon_discount / $item->course->today_price) * 100)  ?? 0;
+                    if ($item->coupon) {
+                        $postFields .= "&cart.items[" . $key . "].name=" . $item->coupon;
+                    }
+                }
+            }
+        }
+
+
+        return $this->executePayment($postFields, $invoiceData, $merchant_id);
+    }
+
+    public function executePayment($postFields, $invoiceData = [], $merchant_id)
+    {
+
+        $json = $this->callAPI($this->API_URL . "/v1/checkouts", $postFields);
+
+        if (isset($invoiceData['package_id'])) {
+            $payment_url = app()->getLocale() . '/business-payment/package_id?package_id=' . $invoiceData['package_id'] . '&payment_method_id=' . $this->method_id . '&method_name=' . $this->method_name . '&checkoutId=' . $json->id . '&type=' . $invoiceData['type'];
+        } else {
+            $payment_url = app()->getLocale() . '/choose_payment_methods?payment_method_id=' . $this->method_id . '&method_name=' . $this->method_name . '&checkoutId=' . $json->id;
+        }
+
+        if (isset($invoiceData['payment_id'])) {
+            $payment_url .= '&payment_id=' . $invoiceData['payment_id'];
+        }
+
+        if (isset($invoiceData['exam_id'])) {
+            $payment_url .= '&exam_id=' . $invoiceData['exam_id'];
+        }
+
+        DB::table('all_payments')->insert([
+            'invoice_id' => '/v1/checkouts/' . $json->id . '/payment',
+            'response' => isset($json) ? json_encode($json) : null,
+            'created_at' => Carbon::now(),
+            'user_id' => auth()->user()->id
+        ]);
+
+        $res = [
+            'InvoiceId' => $merchant_id,
+            'PaymentURL' => $payment_url,
+            'CustomerReference' => $json->id,
+            'RecurringId' =>  $json->id,
+            'response' => isset($json) ? json_encode($json) : null
+        ];
+
+        return $res;
+    }
+
+    public function getPaymentStatus($resourcePath)
+    {
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $this->API_URL .  $resourcePath);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+        $res = curl_exec($ch);
+        $curlErr  = curl_error($ch);
+
+        curl_close($ch);
+
+        if ($curlErr) {
+            //Curl is not working in your server
+            die("Curl Error: $curlErr");
+        }
+
+        $res = json_decode($res, true);
+
+        DB::table('all_payments')->insert([
+            'invoice_id' => $resourcePath,
+            'response' => isset($res) ? json_encode($res) : null,
+            'created_at' => Carbon::now(),
+            'user_id' => auth()->user()->id
+        ]);
+
+        if (isset($res['result']['code']) && in_array((string)$res['result']['code'], $this->success_codes)) {
+            $data = [
+                'payment_id' => isset($res['ndc']) ? $res['ndc'] : null,
+                'invoice_id' => isset($res['ndc']) ? $res['ndc'] : null,
+                'status' => isset($res['amount']) ? 'Paid' : 'Fail',
+                'reference' => isset($res['id']) ? $res['id'] : null,
+                'amount' => isset($res['amount']) ? $res['amount'] : 0,
+                'response' => isset($res) ? json_encode($res) : null
+            ];
+
+            return $data;
+        } elseif (
+            isset($res['result']['code'])
+            && in_array((string)$res['result']['code'], $this->pending_codes)
+        ) {
+
+            $data = [
+                'payment_id' => isset($res['ndc']) ? $res['ndc'] : null,
+                'invoice_id' => isset($res['ndc']) ? $res['ndc'] : null,
+                'status' => 'Pending',
+                'reference' => isset($res['id']) ? $res['id'] : null,
+                'amount' => isset($res['amount']) ? $res['amount'] : 0,
+                'response' => isset($res) ? json_encode($res) : null
+            ];
+
+            return $data;
+        } else {
+            $data = [
+                'payment_id' => isset($res['ndc']) ? $res['ndc'] : null,
+                'invoice_id' => isset($res['ndc']) ? $res['ndc'] : null,
+                'status' => 'Failed',
+                'reference' => isset($res['id']) ? $res['id'] : null,
+                'amount' => isset($res['amount']) ? $res['amount'] : 0,
+                'response' => isset($res) ? json_encode($res) : null
+            ];
+            return $data;
+        }
+    }
+
+    public function callAPI($endpointURL, $postFields = [], $requestType = "POST")
+    {
+        $curl = curl_init();
+        curl_setopt($curl, CURLOPT_URL, $endpointURL);
+        curl_setopt(
+            $curl,
+            CURLOPT_HTTPHEADER,
+            array("Authorization: Bearer " . $this->API_KEY)
+        );
+        curl_setopt($curl, CURLOPT_POST, 1);
+        curl_setopt($curl, CURLOPT_POSTFIELDS, $postFields);
+        curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false); // this should be set to true in production
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+
+        $response = curl_exec($curl);
+        $curlErr  = curl_error($curl);
+
+        curl_close($curl);
+
+        if ($curlErr) {
+            //Curl is not working in your server
+            die("Curl Error: $curlErr");
+        }
+
+        return json_decode($response);
+    }
+
+    public function getPaymentsInPeriod()
+    {
+        $mada_results = $this->fetchPayments(Config::$MADA_ENTITY_ID);
+        $visa_results = $this->fetchPayments($this->ENTITY_ID);
+        return [
+            'mada_payments' => isset($mada_results->records) ? $mada_results->records : [],
+            'visa_payments' => isset($visa_results->records) ? $visa_results->records : []
+        ];
+    }
+    public function fetchPayments($entity_id)
+    {
+        $sub =  Carbon::now();
+        $from =  $sub->subWeek()->format('Y-m-d H:i:s');
+        $to = Carbon::now()->format('Y-m-d H:i:s');
+        $url = $this->API_URL . "/v3/query?date.from=" . urlencode($from) . "&date.to=" . urlencode($to) . "&limit=" . urlencode("500") . "&entityId=" . $entity_id;
+
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+            'Authorization:Bearer ' . $this->API_KEY
+        ));
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // this should be set to true in production
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $responseData = curl_exec($ch);
+        if (curl_errno($ch)) {
+            return curl_error($ch);
+        }
+
+        $json = json_decode($responseData);
+        curl_close($ch);
+
+        return $json;
+    }
+}

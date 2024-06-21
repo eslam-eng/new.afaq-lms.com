@@ -1,0 +1,57 @@
+/******************************** progress bar end *********************************/
+
+
+/* share to social media popup START */
+
+#share_course_popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #663399c4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 99999;
+    visibility: hidden;
+}
+
+#share_course_popup.show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+#share_course_popup .share_to_social_media {
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 30px #0000008f;
+    background-color: #fff;
+    /* width: 75vw; */
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+#share_course_popup .share_to_social_media>i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#share_course_popup .share_to_social_media>div {
+    margin: 30px 30px 10px 30px;
+}
+
+#share_course_popup .share_to_social_media>div>a {
+    margin: 0 10px;
+}
+
+#share_course_popup .share_to_social_media>div>a>i {
+    font-size: 25px;
+}

@@ -1,0 +1,236 @@
+/* ************************** style for after log *******************************/
+.notifcation-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+em.read-massage {
+    font-size: 12px;
+    color: #0079CB;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.notifc-img {
+    width: 70px;
+    height: 70px;
+    position: relative;
+}
+
+.notifc-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.notifc-desc {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+}
+
+.notifc-details {
+    width: calc(100% - 80px);
+    margin: 0 5px;
+}
+
+em.notifc-partiner {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #d7d7d7;
+    background: #fff;
+}
+
+em.notifc-partiner img {
+    width: 100%;
+    height: 100%;
+}
+
+.notifc-details>span {
+    font-size: 12px;
+    color: #3B3B3B;
+    margin: 0;
+    height: 20px;
+    display: block;
+    overflow: hidden;
+}
+
+.notifc-details small {
+    color: #8C8C8C;
+    font-size: 12px;
+    display: block;
+    line-height: 13px;
+    height: 25px;
+    overflow: hidden;
+}
+
+.notifc-details em {
+    font-size: 10px;
+    color: #0E4C75;
+    margin: 0;
+}
+
+.option-notifcation- ul {
+    padding: 0;
+    list-style: none;
+}
+
+.option-notifcation- ul li {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    background: #fff;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    font-size: 12px;
+}
+
+.option-notifcation- {
+    background: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    position: absolute;
+    transition: .3s ease-in-out;
+    display: none;
+    right: 20px;
+    z-index: 2;
+    top: 60px;
+    box-shadow: 0px 0px 6px #696969;
+}
+
+.option-notifcation- ul li i {
+    margin: 0 5px;
+}
+
+.notifc-option {
+    position: absolute;
+    top: 35%;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px #00000073;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease-in-out;
+}
+
+ul.notification-listed li:hover .notifc-option {
+    opacity: 1;
+    visibility: visible;
+}
+
+ul.notification-listed li.read-done {
+    background: #fff;
+}
+
+.option-notifcation- ul li:hover {
+    background: #dcdcdc40;
+    transition: .3s ease-in-out;
+}
+
+em.notifc-partiner img {
+    padding: 5px;
+}
+
+.option-notifcation-.show {
+    display: block;
+}
+
+.read-mark em.hide {
+    display: none;
+}
+
+em.as-unread {
+    display: none;
+}
+
+.read-mark.show em.as-unread {
+    display: block;
+}
+
+.read-mark.show em.as-read {
+    display: none;
+}
+
+.popup-notic-card:before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -12px;
+    right: 20%;
+    background: white;
+    transform: rotate(45deg);
+    border-radius: 2px;
+}
+.popup-notic-card {
+    position: absolute;
+    top: 45px;
+    width: 350px;
+    height: auto;
+    max-height: fit-content;
+    right: calc(100% - 100px);
+    background: #fff;
+    transition: .3s ease-in-out;
+    padding: 0;
+    border-radius: 20px;
+    box-shadow: 0px 8px 26px #00000087;
+    transform: scale(0);
+    /* overflow: hidden; */
+}
+
+
+ul.notification-listed li {
+    background: #E7EFF7;
+    padding: 5px 10px;
+    position: relative;
+}
+
+.popup-notic-card span i{
+    color: #0E4C75;
+}
+ul.notification-listed{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    max-height: 400px;
+    overflow-y: visible !important;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+}
+li.mark-delets {
+    background: unset !important;
+}
+ul.notification-listed >li.hide {
+    display: none;
+}
+.ltr .popup-notic-card {
+    right: calc(100% - 150px);
+}
+
+.ltr .popup-notic-card .notifc-option {
+    right: unset;
+    left: 10px;
+}
+
+.ltr .popup-notic-card .option-notifcation- {
+    right: unset;
+    left: 20px;
+}

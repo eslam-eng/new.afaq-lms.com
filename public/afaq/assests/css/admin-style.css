@@ -1,0 +1,13 @@
+a.btn.btn-add-remove {
+    width: 35px;
+    height: 50px;
+    border-radius: 50%;
+    /* background-color: #22AB78 !important; */
+    /* color: #fff !important; */
+}
+
+a.btn.btn-add-remove i {
+    font-style: normal;
+    text-align: center;
+    display: block;
+}

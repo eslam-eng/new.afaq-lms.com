@@ -1,0 +1,13 @@
+.carts-page.unpaid_invoices > div{
+    width: 80%;
+    margin: auto;
+    padding-top: 110px;
+}
+.carts-page.unpaid_invoices > div > h3{
+    margin: 25px 0;
+}
+@media screen and (max-width: 800px) {
+    .carts-page.unpaid_invoices > div{
+        padding-top: 90px;
+    }
+}
